@@ -7,3 +7,26 @@ strong {
     font-weight: normal;
     /*display: block;*/
 }
+
+/*
+LOS ID NO SE USAN EN CSS
+#a001 {
+  color: rgb(188, 153, 221);
+} */
+
+.destacado {
+    color: rgb(201, 185, 165);
+    
+}
+
+h1 {
+    text-align: center
+}
+
+img {
+    text-align: center
+}
+
+pre {
+    text-align: center
+}

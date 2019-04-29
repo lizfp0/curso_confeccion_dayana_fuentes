@@ -1,0 +1,25 @@
+.main_header {
+    background-color: rgb(156, 141, 121);
+    color: rgb(196, 78, 78);
+    padding: 0.8rem 0rem 0.5rem 1rem;
+}
+
+.main_header p {
+font-size: 1.33rem;
+font-weight: bold;
+margin-top: -1rem;
+}
+
+.main_footer {
+    background-color: rgb(156, 141, 121);
+    color: rgb(196, 78, 78);
+    text-align: center;
+    padding: 1rem;
+}
+
+.h4 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    font-weight: bold;
+}

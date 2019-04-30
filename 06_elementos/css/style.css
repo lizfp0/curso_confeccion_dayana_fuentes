@@ -24,3 +24,12 @@ margin-top: -1rem;
     text-align: center;
     padding: 1rem;
 }
+
+.image_wrapper {
+    text-align: center;
+}
+
+img {
+    max-width: 100;
+}
+

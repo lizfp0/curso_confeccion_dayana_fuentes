@@ -23,3 +23,7 @@ margin-top: -1rem;
     margin-block-end: 1em;
     font-weight: bold;
 }
+
+.section_footer {
+    border-top: 1px solid grey
+}

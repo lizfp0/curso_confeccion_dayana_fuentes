@@ -71,3 +71,28 @@ blockquote footer {
     padding-top: 0.3rem;
     border-top: 1px solid gray;
 }
+
+ul {
+    list-style-type: circle;
+}
+
+ol {
+    /* NONE PARA QUITARLE LOS NÚMEROS DELANTE DE LA LISTA 
+       DISC PARA PONER LOS PUNTITOS DELANTE DE LA LISTA   */
+    list-style-type: disc;
+}
+
+/* PARA TENERLO ORDENADA EN LA MISMA LÍNEA */
+.dt {
+float: left;
+clear: left;
+}
+
+.dd {
+float: left;
+clear: right;
+}
+
+.clearfix {
+    clear: both;
+}

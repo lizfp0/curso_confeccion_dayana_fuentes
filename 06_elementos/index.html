@@ -20,7 +20,15 @@
          </header>
             <p>Esto trata de elementos de seccionado, que son los que se reflejan en el <strong>esquema</strong>  o <span lang="en">(outline)</span>  de la página.</p>
             <p>Inicialmente los elementos incluían body y los encabezados (h1-h6)</p>
-            <p>En HTML5 se añaden los elementos semánticos: header, footer, section, nav, article y aside</p>
+            <p>En HTML5 se añaden los elementos semánticos:</p>
+            <ul>
+                <li>section</li>
+                <li>header</li>
+                <li>footer</li>
+                <li>nav</li>
+                <li>article</li>
+                <li>aside</li>
+            </ul>          
             <section id="etiqueta_section">
             <h3>Etiqueta Section</h3>
             <blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/section">
@@ -124,6 +132,34 @@
             </pre>
             <p>La etiqueta (&lt;blockquote&gt;) se utiliza para crear citas literales en bloque, tal como hemos hecho anteriormente</p>
         </section>  
+       <section>
+             <h3>Listas</h3>
+             <p>Existen 3 tipos de listas</p>
+             <dl>
+                 <!-- dl lleva dos items (dt dd) -->
+                 <!-- dt término   dd definición -->
+                 <dt class="dt">ul</dt> <dd class="dd">desordenadas</dd>
+                 <dt class="dt">ol</dt> <dd class="dd">ordenada</dd>
+                 <dt class="dt">dl</dt> <dd class="dd">de definiciones</dd>
+             </dl>
+             <div class="clearfix"></div>
+             <p>Ejemplo de lista ordenada</p>
+             <ol>
+                 <li>Lunes</li>
+                 <li>Martes</li>
+                 <li>Miércoles</li>
+                 <li>Jueves</li>
+                 <li>Viernes</li>
+                 <li>Sábado</li>
+                 <li>Domingo</li>
+             </ol>
+             <p>Ejemplos de lista con definiciones largas</p>
+             <dl>
+                <dt>Bolígrafo Bic</dt><dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum similique eveniet repellat nostrum iste facere quidem impedit! Neque, facere beatae iste delectus, amet unde explicabo consequatur recusandae, nulla voluptatibus repudiandae.</dd>
+                <dt>Pilots</dt><dd>Incidunt sint labore qui earum autem cupiditate maiores, dolorum laborum ea, aut eum harum porro repudiandae nulla sunt facere et officiis? Autem ducimus quis quos esse repudiandae aspernatur quam ipsa?</dd>
+             </dl>
+             <!-- p*2>lorem PARA PÁRRAFOS DIFERENTES -->
+       </section>
         </section>
           <section id="text_level">
           <header>

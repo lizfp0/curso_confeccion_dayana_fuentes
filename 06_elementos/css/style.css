@@ -96,3 +96,7 @@ clear: right;
 .clearfix {
     clear: both;
 }
+
+footer a {
+    color: rgb(196, 78, 78)
+}

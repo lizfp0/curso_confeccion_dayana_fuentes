@@ -100,3 +100,26 @@ clear: right;
 footer a {
     color: rgb(196, 78, 78)
 }
+
+/* los párrafos que están dentro de footer */
+.main_footer p {
+    margin-bottom: 0;
+} 
+
+.verde {
+    color: rgb(5, 126, 5);
+    /* font-weight: ; */
+    text-decoration: underline;
+    text-decoration: line-through;
+
+}
+
+/* PARA QUITARLE LA NEGRITA */
+strong {
+    font-weight: normal;
+}
+
+/* PARA QUITARLE EL LIGERO SUBRAYADO */
+abbr {
+    text-decoration: none;
+}

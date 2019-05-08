@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-.main_div {
+.content_wrapper {
  margin: 1rem;
 }
 
@@ -33,7 +33,7 @@ margin-bottom: 0;
 }
 
 .main_header nav {
-margin-left: -1rem
+margin-left: -1rem;
 }
 
 .main_header nav ul {

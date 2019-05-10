@@ -55,6 +55,9 @@
                         <img src="./assets/varanococodrilo1.png" alt="Varano Cocodrilo">
                         <img src="./assets/ardilla.gif" alt="Ardilla">
                         <img srcset="./assets/3boats.webp" src="./assets/3boats.jpg" alt="Barcas">
+                        <img src="./assets/005.gif" alt="Git animado abstracto">
+                        <img src="./assets/WoodElf.png" alt="Elfo">
+                        <img srcset="./assets/logo.svg" src="./assets/logo.gif" alt="Logotipo">
                     </div>
                     <div class="clearfix"> </div>
                     <p>Uso de imágenes responsivas en HTML</p>
@@ -74,14 +77,45 @@
                         <source srcset="./assets/girasol_.jpg" type="image/jpg">
                         <img src="girasol_500.jpg" alt="Girasol">
                     </picture>
-                    <div class="clearfix"> </div>
+                    <p>La etiqueta picture y los formatos alternativos de imágenes</p>
+                    <picture>
+                        <source srcset="./assets/tropical-sunrise.webp" type="image/webp">
+                        <img src="./assets/tropical-sunrise.jpg" alt="Atardecer">
+                    </picture>
+                    <picture>
+                        <source srcset="./assets/logo.svg" type="image/svg+xml">
+                        <img src="./assets/logo.gif" alt="Logotipo">
+                    </picture>
+                    <p>Etiqueta figure</p>
+                    <figure>
+                        <img src="./assets/komodo.jpg" alt="">
+                        <figcaption>Varano de Komodo</figcaption>
+                    </figure>
                 </section>
                 <section>
                     <h3>Video y Audio</h3>
+                    <p>Es posible incluir un video desde una fuente externa</p>
+                    <div class="embed-container">
+                    <iframe 
+                    src="https://www.youtube.com/embed/M9Uy0opVF3s" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+                    </div>
+                    <p>Otra opción es reproducir videos de nuestro servidor</p>
+                    <video controls>
+                    <source src="./assets/bts.webm" type="video/webm/">
+                    <source src="./assets/bts_2.mp4" type="video/mp4">
+                    </video>
+                    <audio controls src="./assets/bts_dope.mp3"></audio>
                 </section>
                 <section>
                     <h3>Elementos gráficos de navegación</h3>
                 </section>
+                <aside>
+                    <h3>Elementos embebidos no multimedia</h3>
+                    <p>La etiqueta iframe permite acceder a otra web desde la nuestra</p>
+                    <iframe class="web_externa_bts" src="https://bts.ibighit.com/eng/"></iframe>
+                </aside>
             </section>
         </main>
         <aside>

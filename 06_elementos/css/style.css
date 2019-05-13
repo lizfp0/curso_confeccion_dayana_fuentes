@@ -226,3 +226,9 @@ video {
 embed {
     max-width: 100%;
 }
+
+.main_inicio_footer {
+    text-align: right;
+    color: coral;
+    font-size: 1.1rem;
+}

@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 .content_wrapper {
@@ -18,8 +19,8 @@ body {
     SI QUIERO QUE SOLO SEA UN PRE, CREO UNA CLASE.
 } */
 
-
 .main_header {
+    font-family: 'Heebo', sans-serif;
     background-color: rgb(156, 141, 121);
     color: rgb(196, 78, 78);
     padding: 0.8rem 0rem 0.5rem 1rem;
@@ -154,6 +155,7 @@ footer a {
     margin-bottom: 0;
 } 
 
+
 .verde {
     color: rgb(5, 126, 5);
     /* font-weight: ; */
@@ -194,3 +196,4 @@ abbr {
 video {
     max-width: 100%;
 }
+

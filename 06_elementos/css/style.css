@@ -146,6 +146,11 @@ clear: right;
     clear: both;
 }
 
+.iframe_footer {
+    width: 100%;
+    border: none;
+}
+
 footer a {
     color: rgb(196, 78, 78)
 }
@@ -213,3 +218,11 @@ video {
     max-width: 100%;
 }
 
+.palabra_rota {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+embed {
+    max-width: 100%;
+}

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Elementos de la Web - Multimedia</title>
-    <link href="https://fonts.googleapis.com/css?family=Heebo|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -67,9 +68,11 @@
                         <img srcset="./assets/komodo.300.jpg 300w, 
                                      ./assets/komodo.400.jpg 400w,
                                      ./assets/komodo.500.jpg 500w,
-                                     ./assets/komodo.jpg 600w" size=" (max-width: 300px),
-                                    (max-width: 400px),
-                                    (max-width: 500px)" src="./assets/komodo.jpg" alt="Dragón de Komodo">
+                                     ./assets/komodo.jpg 600w" 
+                                     sizes=" (max-width: 300px) 300px,
+                                            (max-width: 400px) 400px,
+                                            (max-width: 500px) 500px" 
+                                    src="./assets/komodo.jpg" alt="Dragón de Komodo">
                     </div>
                     <p>Etiqueta picture</p>
                     <picture>
@@ -105,7 +108,7 @@
                     </div>
                     <p>Otra opción es reproducir videos de nuestro servidor</p>
                     <video controls>
-                    <source src="./assets/bts.webm" type="video/webm/">
+                    <source src="./assets/bts.webm" type="video/webm">
                     <source src="./assets/bts_2.mp4" type="video/mp4">
                     </video>
                     <audio controls src="./assets/bts_dope.mp3">BTS DOPE</audio>
@@ -123,9 +126,9 @@
                     <iframe class="web_externa_bts" src="https://bts.ibighit.com/eng/"></iframe>
                     <p>Otras formas de insertar contenido externo son object y embed</p>
                     <p>Object</p>
-                    <object data="https://bts.ibighit.com/eng/" type=""></object>
+                    <object data="https://bts.ibighit.com/eng/" type="text/html"></object>
                     <p>Embed</p>
-                    <embed src="https://bts.ibighit.com/eng/" type="">
+                    <embed src="https://bts.ibighit.com/eng/" type="text/html">
                 </aside>
             </section>
         </main>
@@ -134,11 +137,11 @@
             <p>Aquí iría la publicidad</p>
         </aside>
     </div>
-
-    <footer class="main_footer">
+    <iframe class="iframe_footer" src="./_footer.html"></iframe>
+    <!-- <footer class="main_footer">
         <address>
-            <!-- copyright &copy; -->
-            <p>Dayana - <a rel="author" href="mailto://dayanafp1999@hotmail.com">dayanafp1999@hotmail.com</a></p>
+             copyright &copy; -->
+            <!-- <p>Dayana - <a rel="author" href="mailto://dayanafp1999@hotmail.com">dayanafp1999@hotmail.com</a></p>
             <p> <small>© Tajamar</small> </p>
         </address>
         <aside>  
@@ -150,7 +153,7 @@
                 <li><a href="https://github.com/lizfp0" rel="author"><i class="fab fa-github"></i></a></li>
             </ul>
         </aside>
-    </footer>
+    </footer> --> 
 </body>
 
 </html>

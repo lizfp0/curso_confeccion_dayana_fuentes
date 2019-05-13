@@ -155,6 +155,22 @@ footer a {
     margin-bottom: 0;
 } 
 
+.main_footer aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .main_footer aside li {
+    display: inline-block;
+    }
+    
+    .main_footer aside a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 0.8rem 0.2rem;
+    }
 
 .verde {
     color: rgb(5, 126, 5);

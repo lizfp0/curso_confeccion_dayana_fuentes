@@ -237,8 +237,16 @@ embed {
     border: 0;
 }
 
+.centrar {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 .main_table {
     width: 100%;
+    text-align: center;
 }
 
 .main_table>tbody>tr>th {
@@ -247,11 +255,25 @@ embed {
 }
 
 /* even u odd */ /*Filas pares*/
-.main_table>tbody>tr:nth-of-type(even) {
+.main_table>tbody>tr:nth-of-type(even)>td {
     background-color: beige;
 }
 
 /*Filas impares*/
-.main_table>tbody>tr:nth-of-type(odd) {
+.main_table>tbody>tr:nth-of-type(odd)>th {
     background-color:darkseagreen;
+}
+
+.main_table_2 th {
+    border: 1px solid gray;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+} 
+
+.main_table_2 tr:nth-of-type(even) td {
+    background-color: bisque;
+}
+
+.main_table_2 tr:nth-of-type(odd) td {
+    background-color: darkolivegreen;
 }

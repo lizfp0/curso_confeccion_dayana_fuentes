@@ -243,7 +243,6 @@ embed {
     margin-right: auto;
 }
 
-
 .main_table {
     width: 100%;
     text-align: center;
@@ -276,4 +275,9 @@ embed {
 
 .main_table_2 tr:nth-of-type(odd) td {
     background-color: darkolivegreen;
+}
+
+.main_table_2 {
+    width: 100%;
+    text-align: center;
 }

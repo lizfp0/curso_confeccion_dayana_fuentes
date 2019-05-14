@@ -235,5 +235,17 @@ embed {
 
 .sin-borde {
     border: 0;
+}
 
+.main_table {
+    width: 100%;
+}
+
+/* even u odd */
+table.main_table tr:nth-of-type(even) {
+    background-color: beige;
+}
+
+table.main_table tr:nth-of-type(odd) {
+    background-color:darkseagreen;
 }

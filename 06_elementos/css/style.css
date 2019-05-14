@@ -241,11 +241,17 @@ embed {
     width: 100%;
 }
 
-/* even u odd */
-table.main_table tr:nth-of-type(even) {
+.main_table>tbody>tr>th {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+/* even u odd */ /*Filas pares*/
+.main_table>tbody>tr:nth-of-type(even) {
     background-color: beige;
 }
 
-table.main_table tr:nth-of-type(odd) {
+/*Filas impares*/
+.main_table>tbody>tr:nth-of-type(odd) {
     background-color:darkseagreen;
 }

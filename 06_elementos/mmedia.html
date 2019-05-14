@@ -8,7 +8,8 @@
     <title>Elementos de la Web - Multimedia</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -70,11 +71,9 @@
                         <img srcset="./assets/komodo.300.jpg 300w, 
                                      ./assets/komodo.400.jpg 400w,
                                      ./assets/komodo.500.jpg 500w,
-                                     ./assets/komodo.jpg 600w" 
-                                     sizes=" (max-width: 300px) 300px,
+                                     ./assets/komodo.jpg 600w" sizes=" (max-width: 300px) 300px,
                                             (max-width: 400px) 400px,
-                                            (max-width: 500px) 500px" 
-                                    src="./assets/komodo.jpg" alt="Dragón de Komodo">
+                                            (max-width: 500px) 500px" src="./assets/komodo.jpg" alt="Dragón de Komodo">
                     </div>
                     <p>Etiqueta picture</p>
                     <picture>
@@ -103,16 +102,15 @@
                     <h3>Video y Audio</h3>
                     <p>Es posible incluir un video desde una fuente externa</p>
                     <div class="embed-container">
-                    <iframe 
-                    src="https://www.youtube.com/embed/M9Uy0opVF3s" 
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/M9Uy0opVF3s"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                     <p>Otra opción es reproducir videos de nuestro servidor</p>
                     <!-- atributo poster en video sale la imagen a principio del video -->
                     <video controls poster="./assets/idol.jpg">
-                    <source src="./assets/bts.webm" type="video/webm">
-                    <source src="./assets/bts_2.mp4" type="video/mp4">
+                        <source src="./assets/bts.webm" type="video/webm">
+                        <source src="./assets/bts_2.mp4" type="video/mp4">
                     </video>
                     <audio controls src="./assets/bts_dope.mp3">BTS DOPE</audio>
                 </section>
@@ -127,6 +125,11 @@
                     <h3>Elementos embebidos no multimedia</h3>
                     <p>La etiqueta iframe permite acceder a otra web desde la nuestra</p>
                     <iframe class="web_externa_bts" src="https://bts.ibighit.com/eng/"></iframe>
+                    <p>Un uso habitual de los iframes son los mapas de Google</p>
+                    <iframe width="600" height="450" class="sin-borde"
+                    frameborder="0" style="border:0" 
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDFqiEHIoZKyx7iGM6Btu8uvaINHe4RE5w&q=Space+Needle,Seattle+WA" allowfullscreen>
+                    </iframe>
                     <p>Otras formas de insertar contenido externo son object y embed</p>
                     <p>Object</p>
                     <object data="https://bts.ibighit.com/eng/" type="text/html"></object>
@@ -144,7 +147,7 @@
     <!-- <footer class="main_footer">
         <address>
              copyright &copy; -->
-            <!-- <p>Dayana - <a rel="author" href="mailto://dayanafp1999@hotmail.com">dayanafp1999@hotmail.com</a></p>
+    <!-- <p>Dayana - <a rel="author" href="mailto://dayanafp1999@hotmail.com">dayanafp1999@hotmail.com</a></p>
             <p> <small>© Tajamar</small> </p>
         </address>
         <aside>  
@@ -156,7 +159,7 @@
                 <li><a href="https://github.com/lizfp0" rel="author"><i class="fab fa-github"></i></a></li>
             </ul>
         </aside>
-    </footer> --> 
+    </footer> -->
 </body>
 
 </html>

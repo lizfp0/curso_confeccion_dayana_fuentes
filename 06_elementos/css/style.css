@@ -232,3 +232,8 @@ embed {
     color: coral;
     font-size: 1.1rem;
 }
+
+.sin-borde {
+    border: 0;
+
+}

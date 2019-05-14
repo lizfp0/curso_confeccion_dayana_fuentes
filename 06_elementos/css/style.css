@@ -265,8 +265,8 @@ embed {
 
 .main_table_2 th {
     border: 1px solid gray;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
 } 
 
 .main_table_2 tr:nth-of-type(even) td {

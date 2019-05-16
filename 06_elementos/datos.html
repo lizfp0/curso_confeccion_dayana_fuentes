@@ -190,15 +190,15 @@
                 <h3>Formulario más completo</h3>
                 <p>Usamos en un mismo formulario los principales controles</p>
                 <form action="https://jsonplaceholder.typicode.com/users" name="complete-post" method="POST">
-                    <fieldset>
+                    <fieldset id="datos_personales">
                         <legend>Datos personales</legend>
                         <!-- label es una etiqueta que se ponía en vez de placeholder. Esté era usado antes del HTML5 cuando apareció esta nueva etiqueta -->
                         <label for="userName" class="formulario_label">Nombre de usuario</label>
-                        <input type="text" name="userName" id="userName" class="formulario_control" placeholder="Escribe tu nombre y apellidos">
+                        <input type="text" name="userName" id="userName" required class="formulario_control" placeholder="Escribe tu nombre y apellidos">
                         <label for="userPassword" class="formulario_label">Password</label>
-                        <input type="password" name="userPassword" id="userPassword" class="formulario_control" placeholder="Escribe tu password">
+                        <input type="password" name="userPassword" id="userPassword" required minlength="8" maxlength="16" class="formulario_control" placeholder="Escribe tu password">
                         <label for="email" class="formulario_label">Correo</label>
-                        <input type="email" name="email" id="email" class="formulario_control" placeholder="Escribir un correo válido" value="@tajamar.es">
+                        <input type="email" name="email" id="email" required class="formulario_control" placeholder="Escribir un correo válido" value="@tajamar.es">
                         <label for="cv">Formación</label>
                         <input type="text" name="cv" id="cv" list="formacion" class="formulario_control" placeholder="Selecciona o indica tus estudios">
                         <datalist id="formacion"> 
@@ -211,21 +211,21 @@
                         <label for="info" class="formulario_label">Más información</label>
                         <textarea name="info" id="info" rows="5" placeholder="Más información" class="formulario_control"></textarea>
                     </fieldset>
-                    <fieldset>
+                    <fieldset id="condiciones">
                         <legend>Condiciones</legend>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi rem ea alias corrupti facilis
                             quo consequuntur repellendus sit nulla est odio aperiam molestiae magnam excepturi eaque,
                             mollitia maiores dicta accusamus?</p>
-                        <input type="checkbox" name="isOk" id="isOk">
+                        <input type="checkbox" name="isOk" id="isOk" required>
                         <label for="isOk">Estoy de acuerdo con las condiciones</label>
                     </fieldset>
-                    <fieldset>
+                    <fieldset id="Datos_curso">
                         <legend>Datos del curso</legend>
                         <label for="curso" class="formulario_label">Cursos</label>
                         <!-- se puede utilizar size en select: 4 u 8, o depende de lo que sea. también se puede agregar la palabra multiple y luego size
                           <select name="curso" id="curso" class="formulario_control" multiple size="8">-->
-                        <select name="curso" id="curso" class="formulario_control">
-                            <option value="" class="placeholder">Elige un valor</option>
+                        <select name="curso" id="curso" class="formulario_control" required>
+                            <option value="">Elige un valor</option>
                             <optgroup label="Desarrollo Front">
                                 <option value="HTML-01">HTML5</option>
                                 <option value="CSS-02">CSS3</option>
@@ -239,7 +239,7 @@
                         <!-- <p>Ubicación</p> también se puede utilizar p en vez de label y div -->
                         <label class="formulario_label">Ubicaciones</label>
                     <div class="radio_wrapper">  
-                        <input type="radio" name="sitio" id="madrid" value="MAD">
+                        <input type="radio" name="sitio" id="madrid" value="MAD" required>
                         <label for="madrid">Madrid</label>
                         <input type="radio" name="sitio" id="sevilla" value="SEV">
                         <label for="sevilla">Sevilla</label>
@@ -247,8 +247,31 @@
                         <label for="barcelona">Barcelona</label>
                     </div>   
                     </fieldset>
-                    <button type="submit">Enviar</button>
+                    <input type="submit" value="Enviar"> <!--  También podemos optar por está opción, pero la de abajo es mejor -->
+                    <button type="submit">Enviar<i class="fas fa-paper-plane"></i></button>
+                    <input type="reset" value="Borrar">
+                    <button type="reset">Borrar<i class="fas fa-trash-alt"></i></button>
+                    <!-- está etiqueta solo sirve con la ayuda de javascript  -->
+                    <button type="button">SIN USO</button>
                 </form>
+                <p>Existen otros controles de formulario</p>
+                <dl>
+                    <dt class="dt">Input color</dt>
+                    <dd class="dd"><input type="color"></dd>
+                    <dt class="dt">Input file</dt>
+                    <dd class="dd"><input type="file"></dd>
+                    <dt class="dt">Input number</dt>
+                    <dd class="dd"><input type="number"></dd>
+                    <dt class="dt">Input range</dt>
+                    <dd class="dd"><input type="range"></dd>
+                    <dt class="dt">Input search</dt>
+                    <dd class="dd"><input type="search"></dd>
+                    <dt class="dt">Input tel</dt>
+                    <dd class="dd"><input type="tel"></dd>
+                    <dt class="dt">Input url</dt>
+                    <dd class="dd"><input type="url"></dd>
+                </dl>
+                <div class="clearfix"></div>
             </section>
         </main>
         <aside>

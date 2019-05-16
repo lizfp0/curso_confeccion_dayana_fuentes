@@ -196,7 +196,8 @@
                         <label for="userName" class="formulario_label">Nombre de usuario</label>
                         <input type="text" name="userName" id="userName" required class="formulario_control" placeholder="Escribe tu nombre y apellidos">
                         <label for="userPassword" class="formulario_label">Password</label>
-                        <input type="password" name="userPassword" id="userPassword" required minlength="8" maxlength="16" class="formulario_control" placeholder="Escribe tu password">
+                        <!-- para una expresión irregular - pattern (conraseña con numeros, letras, signos,etc) -->
+                        <input type="password" name="userPassword" id="userPassword" required minlength="8" maxlength="16"  class="formulario_control" placeholder="Escribe tu password"> 
                         <label for="email" class="formulario_label">Correo</label>
                         <input type="email" name="email" id="email" required class="formulario_control" placeholder="Escribir un correo válido" value="@tajamar.es">
                         <label for="cv">Formación</label>
@@ -261,9 +262,9 @@
                     <dt class="dt">Input file</dt>
                     <dd class="dd"><input type="file"></dd>
                     <dt class="dt">Input number</dt>
-                    <dd class="dd"><input type="number"></dd>
+                    <dd class="dd"><input type="number" min="0" max="10" step="2"></dd>
                     <dt class="dt">Input range</dt>
-                    <dd class="dd"><input type="range"></dd>
+                    <dd class="dd"><input type="range" min="-1" max="1"></dd>
                     <dt class="dt">Input search</dt>
                     <dd class="dd"><input type="search"></dd>
                     <dt class="dt">Input tel</dt>

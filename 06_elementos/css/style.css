@@ -281,3 +281,53 @@ embed {
     width: 100%;
     text-align: center;
 }
+
+.formulario_control {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gainsboro;
+    padding-top: 0.7rem;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+    /* color: aliceblue;
+    background-color: rgb(140, 202, 202);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+/*select:selected 
+    {color: rgb(172, 69, 69);}
+ select:hover {
+    font-size: 4rem;
+} */
+
+.placeholder {
+    color: rgb(172, 69, 69); 
+    background-color:antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+ .formulario_control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+     color: rgb(172, 69, 69);
+     opacity: 1; /* Firefox*/
+} 
+  
+.formulario_control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+     color: rgb(172, 69, 69); 
+}
+    
+.formulario_control::-ms-input-placeholder { /* Microsoft Edge  */
+     color: rgb(172, 69, 69);
+}  
+
+.formulario_label {
+    display: block;
+    margin-top: 1rem;
+}
+
+fieldset {
+    margin-bottom: 1rem;
+    border-color: salmon;
+    width: 60%;
+}

@@ -173,9 +173,64 @@
                     <li>action</li>
                     <li>method</li>
                 </ul>
-                <form action="https://jsonplaceholder.typicode.com/users" method="POST">
+                <h3>Formulario mínimo</h3>
+                <p>Ejemplo de los elementos mínimos de los formularios y uso de los distintos métodos: GET y POST</p>
+                <h4>Uso de GET</h4>
+                <form action="" name="basic-get" method="GET">
                     <input type="text" name="userName" placeholder="Escribe tu nombre">
                     <input type="password" name="userPassword" placeholder="Escribe tu password">
+                    <button type="submit">Enviar</button>
+                </form>
+                <h4>Uso de POST</h4>
+                <form action="https://jsonplaceholder.typicode.com/users" name="basic-post" method="POST">
+                    <input type="text" name="userName" placeholder="Escribe tu nombre">
+                    <input type="password" name="userPassword" placeholder="Escribe tu password">
+                    <button type="submit">Enviar</button>
+                </form>
+                <h3>Formulario más completo</h3>
+                <p>Usamos en un mismo formulario los principales controles</p>
+                <form action="https://jsonplaceholder.typicode.com/users" name="complete-post" method="POST">
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        <!-- label es una etiqueta que se ponía en vez de placeholder. Esté era usado antes del HTML5 cuando apareció esta nueva etiqueta -->
+                        <label for="userName" class="formulario_label">
+                            Nombre de usuario</label>
+                        <input type="text" name="userName" id="userName" class="formulario_control"
+                            placeholder="Escribe tu nombre y apellidos">
+                        <label for="userPassword" class="formulario_label">
+                            Password</label>
+                        <input type="password" name="userPassword" id="userPassword" class="formulario_control"
+                            placeholder="Escribe tu password">
+                        <label for="email" class="formulario_label">Correo</label>
+                        <input type="email" name="email" id="email" class="formulario_control"
+                            placeholder="Escribir un correo válido" value="@tajamar.es">
+                        <label for="info" class="formulario_label">Más información</label>
+                        <textarea name="info" id="info" rows="5"  placeholder="Más información" class="formulario_control"></textarea> 
+                    </fieldset>
+                    <fieldset>
+                        <legend>Condiciones</legend>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi rem ea alias corrupti facilis quo consequuntur repellendus sit nulla est odio aperiam molestiae magnam excepturi eaque, mollitia maiores dicta accusamus?</p>
+                        <input type="checkbox" name="isOk" id="isOk">
+                        <label for="isOk">Estoy de acuerdo con las condiciones</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos del curso</legend>
+                        <label for="curso" class="formulario_label">Cursos</label>
+                         <!-- se puede utilizar size en select: 4 u 8, o depende de lo que sea. también se puede agregar la palabra multiple y luego size
+                         <select name="curso" id="curso" class="formulario_control" multiple size="8">-->
+                        <select name="curso" id="curso" class="formulario_control" size="8">        
+                            <option value="" class="placeholder">Elige un valor</option>
+                            <optgroup label="Desarrollo Front">
+                            <option value="HTML-01">HTML5</option>
+                            <option value="CSS-02">CSS3</option>
+                            <option value="JS-03">JavaScript</option>
+                            </optgroup>
+                            <optgroup label="Programación Back">
+                                <option value="Node-04">Node JS</option>
+                                <option value="PHP-05">PHP</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
                     <button type="submit">Enviar</button>
                 </form>
             </section>

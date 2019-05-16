@@ -295,6 +295,12 @@ embed {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
+.radio_wrapper {
+    padding-top: 0.7rem;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+}
+
 /*select:selected 
     {color: rgb(172, 69, 69);}
  select:hover {

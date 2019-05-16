@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Elementos de la Web - Datos</title>
-    <link rel="shortcut" href="./favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -41,9 +41,9 @@
                     <caption>Porcentaje de uso de los navegadores web en distintos años</caption>
                     <tr>
                         <th></th>
-                        <td scope="col">2017</td>
-                        <td scope="col">2018</td>
-                        <td scope="col">2019</td>
+                        <td>2017</td>
+                        <td>2018</td>
+                        <td>2019</td>
                     </tr>
                     <tr>
                         <th scope="row">Google Chrome</th>
@@ -129,9 +129,9 @@
                         <th colspan="3" scope="colgroup">Destinos</th>
                     </tr>
                     <tr>
-                        <td scope="col">Corea del Sur</td>
-                        <td scope="col">Japón</td>
-                        <td scope="col">China</td>
+                        <th scope="col">Corea del Sur</th>
+                        <th scope="col">Japón</th>
+                        <th scope="col">China</th>
                     </tr>
                     <tr>
                         <th rowspan="3" scope="rowgroup">Rangos de edad</th>
@@ -176,7 +176,7 @@
                 <h3>Formulario mínimo</h3>
                 <p>Ejemplo de los elementos mínimos de los formularios y uso de los distintos métodos: GET y POST</p>
                 <h4>Uso de GET</h4>
-                <form action="" name="basic-get" method="GET">
+                <form name="basic-get" method="GET">
                     <input type="text" name="userName" placeholder="Escribe tu nombre">
                     <input type="password" name="userPassword" placeholder="Escribe tu password">
                     <button type="submit">Enviar</button>
@@ -193,20 +193,21 @@
                     <fieldset>
                         <legend>Datos personales</legend>
                         <!-- label es una etiqueta que se ponía en vez de placeholder. Esté era usado antes del HTML5 cuando apareció esta nueva etiqueta -->
-                        <label for="userName" class="formulario_label">
-                            Nombre de usuario</label>
-                        <input type="text" name="userName" id="userName" class="formulario_control"
-                            placeholder="Escribe tu nombre y apellidos">
-                        <label for="userPassword" class="formulario_label">
-                            Password</label>
-                        <input type="password" name="userPassword" id="userPassword" class="formulario_control"
-                            placeholder="Escribe tu password">
+                        <label for="userName" class="formulario_label">Nombre de usuario</label>
+                        <input type="text" name="userName" id="userName" class="formulario_control" placeholder="Escribe tu nombre y apellidos">
+                        <label for="userPassword" class="formulario_label">Password</label>
+                        <input type="password" name="userPassword" id="userPassword" class="formulario_control" placeholder="Escribe tu password">
                         <label for="email" class="formulario_label">Correo</label>
-                        <input type="email" name="email" id="email" class="formulario_control"
-                            placeholder="Escribir un correo válido" value="@tajamar.es">
+                        <input type="email" name="email" id="email" class="formulario_control" placeholder="Escribir un correo válido" value="@tajamar.es">
+                        <label for="cv">Formación</label>
+                        <input type="text" name="cv" id="cv" list="formacion" class="formulario_control" placeholder="Selecciona o indica tus estudios">
+                        <datalist id="formacion"> 
+                            <option>Graduado</option>
+                            <option>Licenciado</option>
+                            <option>Doctor</option>
+                        </datalist>
                         <label for="info" class="formulario_label">Más información</label>
-                        <textarea name="info" id="info" rows="5" placeholder="Más información"
-                            class="formulario_control"></textarea>
+                        <textarea name="info" id="info" rows="5" placeholder="Más información" class="formulario_control"></textarea>
                     </fieldset>
                     <fieldset>
                         <legend>Condiciones</legend>
@@ -233,14 +234,14 @@
                                 <option value="PHP-05">PHP</option>
                             </optgroup>
                         </select>
-                        <!-- <p>Ubicación</p> también se puede utiliar p en vez de label y div -->
+                        <!-- <p>Ubicación</p> también se puede utilizar p en vez de label y div -->
                         <label class="formulario_label">Ubicaciones</label>
                     <div class="radio_wrapper">  
-                        <input type="radio" name="sitio" id="madrid">
+                        <input type="radio" name="sitio" id="madrid" value="MAD">
                         <label for="madrid">Madrid</label>
-                        <input type="radio" name="sitio" id="sevilla">
+                        <input type="radio" name="sitio" id="sevilla" value="SEV">
                         <label for="sevilla">Sevilla</label>
-                        <input type="radio" name="sitio" id="barcelona">
+                        <input type="radio" name="sitio" id="barcelona" value="BRC">
                         <label for="barcelona">Barcelona</label>
                     </div>   
                     </fieldset>

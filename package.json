@@ -1,0 +1,28 @@
+{
+  "name": "curso_confeccion_dayana_fuentes",
+  "version": "1.0.0",
+  "description": "Curso Web Tajamar 2019",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizfp0/curso_confeccion_dayana_fuentes.git"
+  },
+  "keywords": [
+    "HTML5",
+    "CSS3",
+    "WEB",
+    "JS"
+  ],
+  "author": "Dayana Fuentes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lizfp0/curso_confeccion_dayana_fuentes/issues"
+  },
+  "homepage": "https://github.com/lizfp0/curso_confeccion_dayana_fuentes#readme",
+  "dependencies": {
+    "dialog-polyfill": "^0.5.0"
+  }
+}

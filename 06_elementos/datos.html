@@ -195,7 +195,7 @@
                         <!-- label es una etiqueta que se ponía en vez de placeholder. Esté era usado antes del HTML5 cuando apareció esta nueva etiqueta -->
                         <label for="userName" class="formulario_label">Nombre de usuario</label>
                         <input type="text" name="userName" id="userName" required class="formulario_control" placeholder="Escribe tu nombre y apellidos">
-                        <label for="userPassword" class="formulario_label">Password</label>
+                        <label for="userPassword" class="formulario_label">Password.<span title=" 1.) at least 1 upper case character 2.) at least 1 lower case character 3.) at least 1 numerical character 4.) at least 1 special character">Ver formato</span></label>
                         <!-- para una expresión irregular - pattern (contraseña con números, letras, signos,etc) -->
                         <input type="password" name="userPassword" id="userPassword" required minlength="8" maxlength="16" pattern="(?=^.{6,255}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9])(?=.*[a-z])|(?=.*[^A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9]))^.*" class="formulario_control" placeholder="Escribe tu password"> 
                         <label for="email" class="formulario_label">Correo</label>

@@ -286,7 +286,7 @@
                 <h3>Etiqueta details</h3>
                     <p>Permite crear un bloque con información extra que se muestra opcionalmente</p>
                 <h4>Novedades en HTML 5.1</h4>
-            <blockquote cite="https://www.imaginanet.com/html5-novedades.html">
+                <blockquote cite="https://www.imaginanet.com/html5-novedades.html">
                 <details>
                     <summary>Definir múltiples imágenes para el diseño responsive</summary>
                     <p>Esta versión nos ofrece la posibilidad de utilizar el tag picture, junto con el atributo srcset para poder definir múltiples imágenes para el diseño responsivo. Podríamos definir este tag como un contenedor de imágenes donde los diseñadores podrán declarar varias, que se utilizarán dependiendo del tamaño de pantalla, píxeles u otros parámetros. Por sí solo este tag no muestra nada, y para que funcione deberíamos establecer una imagen por defecto utilizando la etiqueta img habitual. Las imágenes alternativas se ubicarían 
@@ -319,7 +319,15 @@
                         <a href="https://www.imaginanet.com/html5-novedades.html" rel="external" target="_blank">https://www.imaginanet.com/html5-novedades.html</a>
                     </cite>
                 </footer>
-            </blockquote>
+                </blockquote>
+                <h3>Etiqueta diálogo</h3>
+                 <p>La etiqueta dialog, novedad de HTML 5.2, corresponde a lo que se conoce como una ventana modal o simplemente modal</p>
+                <blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/dialog">El atributo open indica que el diálogo está activo y disponible para interactuar. Cuando el atributo open no está asignado, no debe mostrarse al usuario.</blockquote>
+                <dialog>
+                    <p>Información que se mostrará cuando aparezca el modal</p>   
+                    <button type="button">Cerrar</button>
+                </dialog>
+                <button type="button" id="btn-info">Mostrar información</button>
             </section>
         </main>
         <aside>

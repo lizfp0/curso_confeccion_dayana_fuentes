@@ -341,6 +341,6 @@ fieldset {
 .canvas {
     width:400px;
     height: 400px;
-    border: 1px solid salmon;
+    border: 2px solid salmon;
     background-color: antiquewhite;
 }

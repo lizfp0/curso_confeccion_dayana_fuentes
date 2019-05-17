@@ -27,4 +27,11 @@ function main2() {
     }
 }
 
+function canvas() {
+    let c = document.querySelector ('#cnv-sample').getContext('2d')
+    c.fillRect(30, 20, 50, 50);
+    c.fillRect(90, 80, 50, 50);
+}
+
 document.addEventListener('DOMContentLoaded', main2)
+document.addEventListener('DOMContentLoaded', canvas)

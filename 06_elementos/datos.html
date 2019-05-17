@@ -196,8 +196,8 @@
                         <label for="userName" class="formulario_label">Nombre de usuario</label>
                         <input type="text" name="userName" id="userName" required class="formulario_control" placeholder="Escribe tu nombre y apellidos">
                         <label for="userPassword" class="formulario_label">Password</label>
-                        <!-- para una expresión irregular - pattern (conraseña con numeros, letras, signos,etc) -->
-                        <input type="password" name="userPassword" id="userPassword" required minlength="8" maxlength="16"  class="formulario_control" placeholder="Escribe tu password"> 
+                        <!-- para una expresión irregular - pattern (contraseña con números, letras, signos,etc) -->
+                        <input type="password" name="userPassword" id="userPassword" required minlength="8" maxlength="16" pattern="(?=^.{6,255}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9])(?=.*[a-z])|(?=.*[^A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9]))^.*" class="formulario_control" placeholder="Escribe tu password"> 
                         <label for="email" class="formulario_label">Correo</label>
                         <input type="email" name="email" id="email" required class="formulario_control" placeholder="Escribir un correo válido" value="@tajamar.es">
                         <label for="cv">Formación</label>

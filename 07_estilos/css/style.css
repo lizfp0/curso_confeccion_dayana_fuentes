@@ -12,11 +12,22 @@ Ejemplo de import asociado a una media query
 @page
 @supports*/
 
+/* Selector de etiqueta */
 
 body {
     background-color: cadetblue;
     color: rgb(78, 41, 16);
 }
+
+/* Selector de clase 
+.sample{
+    color: green;
+}*/
+
+/* Selector de id:NO SE USA POR BUENAS PRÁCTICAS 
+#verde {
+    color: green;
+}*/
 
 /* Formas más habituales de usar media Queries */
 @media screen and (max-device-width: 500px) {

@@ -22,25 +22,29 @@ header p {
     font-weight: bold;
 }
 
+/******************************
+ESTILOS DE LA section.combinadores
+*******************************/
+
 /* Selectores combinados ()antes selectores contextuales*/
 
 /* Selectores de descendientes (descendent)- símbolo el espacio*/
-.combinadores p {
+section.combinadores p {
     background-color: rgb(184, 73, 95);
 }
 
 /* Selectores de hijos (child)- símbolo es el > */
-.combinadores>p {
+section.combinadores>p {
     background-color:rgb(197, 116, 58);
 }
 
 /* Selector de hermanos (sibilings)- el símbolo es la ~ */
-.combinadores div~p {
+section.combinadores div~p {
     background-color: rgb(24, 100, 24);
 }
 
 /* Selector de hermanos adyacentes (adyacent sibilings)- el símbolo es el + */
-.combinadores div+p {
+section.combinadores div+p {
     background-color: lightblue;
 }
 

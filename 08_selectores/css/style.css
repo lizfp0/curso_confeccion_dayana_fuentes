@@ -1,3 +1,23 @@
+header {
+    background-color: brown;
+    color: darkcyan;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding-left: 5rem;
+}
+
+header h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+header p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
 /* Selectores combinados ()antes selectores contextuales*/
 
 /* Selectores de hijos (child) */

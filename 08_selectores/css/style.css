@@ -1,7 +1,6 @@
 /******************************
 ESTILOS DE HEADER
 *******************************/
-
 header {
     background-color: rgb(179, 81, 81);
     color: burlywood;
@@ -35,9 +34,36 @@ header p {
     background-color:rgb(197, 116, 58);
 }
 
-/* Selector de hermanos (sibilings) */
+/* Selector de hermanos (sibilings)- el símbolo es la ~ */
+.combinadores div~p {
+    background-color: rgb(24, 100, 24);
+}
 
-/* Selector de hermanos adyacentes (adyacent sibilings) */
+/* Selector de hermanos adyacentes (adyacent sibilings)- el símbolo es el + */
+.combinadores div+p {
+    background-color: lightblue;
+}
+
+/* Selector de atributo- símbolo los [] */
+[title] {
+    color: lightsalmon;
+}
+/* Atributo igual a  */
+[title="Extra"] {
+    color: lightskyblue;
+}
+/* Atributo empieza por  */
+[title^="Párrafo"] {
+    color: mediumpurple;
+}
+/* Atributo contiene  */
+[title*="rrafo"] {
+    color: rgb(110, 88, 155);
+}
+/* Atributo termina por */
+[title$="1"] {
+    color: tomato;
+}
 
 /*******************************
 ESTILOS DE FOOTER

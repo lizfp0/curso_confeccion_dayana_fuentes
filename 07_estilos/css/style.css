@@ -13,7 +13,6 @@ Ejemplo de import asociado a una media query
 @supports*/
 
 /* Selector de etiqueta */
-
 body {
     background-color: cadetblue;
     color: rgb(78, 41, 16);

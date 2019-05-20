@@ -34,19 +34,6 @@ p, blockquote { font-size: 1.1rem};
 p {font-size: 1.1rem};
 blockquote {font-size: 1.1rem}; */
 
-/* Selectores combinados */
-
-/* Selectores de hijos (child) */
-
-/* Selectores de descendientes (descendent)- símbolo el espacio*/
-.combinar p {
-    background-color: crimson;
-}
-
-/* Selector de hermanos (sibilings) */
-
-/* Selector de hermanos adyacentes (adyacent sibilings) */
-
 /* Formas más habituales de usar media Queries */
 @media screen and (max-device-width: 500px) {
     body {

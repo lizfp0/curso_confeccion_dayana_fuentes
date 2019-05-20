@@ -1,18 +1,19 @@
 /******************************
-ESTILOS DE CSS 
+ESTILOS DE HEADER
 *******************************/
 
 header {
-    background-color: brown;
-    color: darkcyan;
+    background-color: rgb(179, 81, 81);
+    color: burlywood;
     margin-bottom: 2rem;
     margin-top: 2rem;
     padding-left: 5rem;
+    text-align: center;
 }
 
 header h1 {
-    margin-bottom: 0;
-    margin-top: 0;
+    margin-bottom: 2;
+    margin-top: 2;
 }
 
 header p {
@@ -24,13 +25,36 @@ header p {
 
 /* Selectores combinados ()antes selectores contextuales*/
 
-/* Selectores de hijos (child) */
+/* Selectores de descendientes (descendent)- símbolo el espacio*/
+.combinadores p {
+    background-color: rgb(184, 73, 95);
+}
 
-/* Selectores de descendientes (descendent)- símbolo el espacio
-.combinación p {
-    background-color: crimson;
-}*/
+/* Selectores de hijos (child)- símbolo es el > */
+.combinadores>p {
+    background-color:rgb(197, 116, 58);
+}
 
 /* Selector de hermanos (sibilings) */
 
 /* Selector de hermanos adyacentes (adyacent sibilings) */
+
+/*******************************
+ESTILOS DE FOOTER
+********************************/
+footer {
+    background-color: rgb(160, 70, 70);
+    color: burlywood;
+    margin-bottom: 1rem;;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+footer address {
+    font-style: normal;
+}
+
+footer p {
+    margin-top: 0;
+    margin-bottom: 0;
+}

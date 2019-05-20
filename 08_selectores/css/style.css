@@ -49,13 +49,15 @@ section.combinadores div+p {
 }
 
 /* Selector de atributo- símbolo los [] */
-[title] {
+p[title] {
     color: lightsalmon;
 }
 /* Atributo igual a  */
 [title="Extra"] {
-    color: lightskyblue;
+    color: lightskyblue; 
 }
+/* !important es muy importante para ponerlo en cualquier circutancias, va dentro del valor dentro del ; */
+
 /* Atributo empieza por  */
 [title^="Párrafo"] {
     color: mediumpurple;

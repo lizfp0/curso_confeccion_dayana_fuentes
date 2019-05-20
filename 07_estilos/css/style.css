@@ -1,0 +1,26 @@
+/*@charset 'UTF-8';
+Ejemplos de imports sin condiciones
+@import url(./header.css);
+@import url(./footer.css);   *Es parecido a link en index, se puede hacer de las dos maneras* 
+Ejemplo de import asociado a una media query
+@import url(./header.css) screen and (max-device-width: 500px):*/
+
+/* Otras directivas son;
+@font-face
+@keyframes 
+@namespace
+@page
+@supports*/
+
+
+body {
+    background-color: cadetblue;
+    color: rgb(78, 41, 16);
+}
+
+/* Formas más habituales de usar media Queries */
+@media screen and (max-device-width: 500px) {
+    body {
+        background-color: burlywood;
+    }
+}

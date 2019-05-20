@@ -14,19 +14,38 @@ Ejemplo de import asociado a una media query
 
 /* Selector de etiqueta */
 body {
-    background-color: cadetblue;
-    color: rgb(78, 41, 16);
+    background-color: rgb(135, 200, 202);
+    color: brown;
 }
 
-/* Selector de clase 
+/* Selector de clase */
 .sample{
     color: green;
-}*/
+}
 
-/* Selector de id:NO SE USA POR BUENAS PRÁCTICAS 
-#verde {
-    color: green;
-}*/
+/* Selector de id:NO SE USA POR BUENAS PRÁCTICAS */
+.verde {
+    color: green; 
+}
+
+/* Selectores agrupados */
+p, blockquote { font-size: 1.1rem};
+/* Es lo mismo que esto
+p {font-size: 1.1rem};
+blockquote {font-size: 1.1rem}; */
+
+/* Selectores combinados */
+
+/* Selectores de hijos (child) */
+
+/* Selectores de descendientes (descendent)- símbolo el espacio*/
+.combinar p {
+    background-color: crimson;
+}
+
+/* Selector de hermanos (sibilings) */
+
+/* Selector de hermanos adyacentes (adyacent sibilings) */
 
 /* Formas más habituales de usar media Queries */
 @media screen and (max-device-width: 500px) {

@@ -158,6 +158,16 @@ body {
     padding: 0.2rem;
 }
    
+.pseudo-clases header div{
+    display: none;
+}
+
+.pseudo-clases header:hover div {
+    display: initial;
+    padding: 1rem;
+    text-align: center;
+}
+
 /* .pseudo-clases a {
     color: blueviolet;
 } */

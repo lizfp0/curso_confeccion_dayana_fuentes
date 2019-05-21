@@ -49,30 +49,90 @@ section.combinadores div+p {
 }
 
 /******************************
-ESTILOS DE LA sección atributos
+ESTILOS DE LA SECCIÓN ATRIBUTOS
 *******************************/
 
 /* Selector de atributo- símbolo los [] */
-p[title] {
+.atributos p[title] {
     color: lightsalmon;
 }
-/* Atributo igual a  */
+.atributos /* Atributo igual a  */
 [title="Extra"] {
     color: lightskyblue; 
 }
 /* !important : es muy importante para ponerlo en cualquier circunstancias, va dentro del valor dentro del punto y coma ";" */
 
-/* Atributo empieza por  */
+.atributos /* Atributo empieza por  */
 [title^="Párrafo"] {
     color: mediumpurple;
 }
-/* Atributo contiene  */
+.atributos /* Atributo contiene  */
 [title*="rrafo"] {
     color: rgb(110, 88, 155);
 }
-/* Atributo termina por */
+.atributos /* Atributo termina por */
 [title$="1"] {
     color: tomato;
+}
+
+/*******************************
+ESTILOS DE LAS SECCIONES .PSEUDO-ELEMENTOS Y .NUMERADOS
+********************************/
+
+.pseudo-elementos p::first-letter {
+    font-size: 3rem;
+    font-family: fantasy;
+    color: cadetblue;
+}
+
+.pseudo-elementos p::first-line {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.pseudo-elementos .medio {
+    color: brown;
+}
+
+.pseudo-elementos .medio-pro::before, 
+.pseudo-elementos .medio-pro::after {
+    content: url(../../favicon.ico) url(../../favicon.ico) "Fantástico" url(../../favicon.ico) url(../../favicon.ico);
+    display: block;
+    background-color: rgb(250, 168, 138);
+    width: 100%;
+    color: rgb(230, 230, 159);
+    padding: 1rem;
+    margin-top: 0.8rem;
+    text-align: center;
+}
+
+.banda {
+    background-color: rgb(250, 168, 138);
+    padding: 1rem;
+    margin-top: 0.8rem;
+}
+
+body {
+    counter-reset: parrafos;
+}
+
+.numerados p::before {
+    counter-increment:parrafos; 
+    content: counter(parrafos) " - ";
+    font-weight: bold;
+}
+
+.comillas {
+    /* quotes: '\00AB' '\00BB'; */
+    quotes: "«" "»";
+}
+
+.comillas p::before {
+    content: open-quote;
+}
+
+.comillas p::after {
+    content: close-quote;
 }
 
 /*******************************

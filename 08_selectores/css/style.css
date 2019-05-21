@@ -192,6 +192,40 @@ body {
     font-style: italic;
 }
 
+.pseudo-numericas li {
+    width: 85%;
+}
+
+/* También podemos utilizarlo con la palabra en ingles 
+.pseudo-numericas li:nth-of-type(even) {
+    background-color: bisque;
+} */
+
+.pseudo-numericas li:nth-of-type(2n) {
+    background-color: bisque;
+}
+
+/* También podemos utilizarlo con la palabra en ingles 
+.pseudo-numericas li:nth-of-type(odd) {
+    background-color: bisque;
+} */
+
+.pseudo-numericas li:nth-of-type(2n+1) {
+    background-color: darkseagreen;
+}
+
+
+/* De tres en tres 
+.pseudo-numericas li:nth-of-type(3n) {
+    background-color: bisque;
+}
+ .pseudo-numericas li:nth-of-type(3n+1) {
+    background-color: bisque;
+}
+ .pseudo-numericas li:nth-of-type(3n+2) {
+    background-color: bisque;
+}*/
+
 /************************************************************************************************
                                     ESTILOS DE FOOTER
 **************************************************************************************************/

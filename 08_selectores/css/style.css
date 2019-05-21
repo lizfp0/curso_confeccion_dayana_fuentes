@@ -48,6 +48,10 @@ section.combinadores div+p {
     background-color: lightblue;
 }
 
+/******************************
+ESTILOS DE LA sección atributos
+*******************************/
+
 /* Selector de atributo- símbolo los [] */
 p[title] {
     color: lightsalmon;
@@ -56,7 +60,7 @@ p[title] {
 [title="Extra"] {
     color: lightskyblue; 
 }
-/* !important es muy importante para ponerlo en cualquier circutancias, va dentro del valor dentro del ; */
+/* !important : es muy importante para ponerlo en cualquier circunstancias, va dentro del valor dentro del punto y coma ";" */
 
 /* Atributo empieza por  */
 [title^="Párrafo"] {

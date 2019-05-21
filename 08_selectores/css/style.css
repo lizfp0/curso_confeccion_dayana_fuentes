@@ -1,6 +1,7 @@
 /*********************************************************************************************
-                        ESTILOS DE HEADER
+                                   ESTILOS DE HEADER
 ***********************************************************************************************/
+
 body>header {
     background-color: rgb(179, 81, 81);
     color: burlywood;
@@ -23,7 +24,7 @@ body>header p {
 }
 
 /**********************************************************************************************
-               ESTILOS DE LA section.combinadores
+                          ESTILOS DE LA section.combinadores
 ************************************************************************************************/
 
 /* Selectores combinados ()antes selectores contextuales*/
@@ -49,7 +50,7 @@ section.combinadores div+p {
 }
 
 /***********************************************************************************************
-              ESTILOS DE LA SECCIÓN ATRIBUTOS
+                          ESTILOS DE LA SECCIÓN ATRIBUTOS
 *************************************************************************************************/
 
 /* Selector de atributo- símbolo los [] */
@@ -76,7 +77,7 @@ section.combinadores div+p {
 }
 
 /************************************************************************************************
-    ESTILOS DE LAS SECCIONES .PSEUDO-ELEMENTOS, .NUMERADOS y .COMILLAS
+              ESTILOS DE LAS SECCIONES .PSEUDO-ELEMENTOS, .NUMERADOS y .COMILLAS
 **************************************************************************************************/
 
 .pseudo-elementos p::first-letter {
@@ -136,10 +137,16 @@ body {
 }
 
 /***********************************************************************************************
-            ESTILOS DE LAS SECCIONES .PSEUDO-CLASES
+                        ESTILOS DE LAS SECCIONES .PSEUDO-CLASES
 *************************************************************************************************/
+
 .pseudo-clases header {
     background-color: bisque;
+    padding-bottom: 1rem;
+}
+
+.pseudo-clases header {
+    margin-bottom: 0.2rem;
 }
 
 .pseudo-clases header p {
@@ -148,11 +155,26 @@ body {
 
 .pseudo-clases header:hover p {
     display: inherit;
+    padding: 0.2rem;
 }
    
+/* .pseudo-clases a {
+    color: blueviolet;
+} */
+
+.pseudo-clases a:visited {
+    color: rgb(226, 136, 71);
+}
+
+.pseudo-clases a:link {
+    color: rgb(197, 64, 64);
+}
+
+
 /************************************************************************************************
-                     ESTILOS DE FOOTER
+                                    ESTILOS DE FOOTER
 **************************************************************************************************/
+
 body>footer {
     background-color: rgb(160, 70, 70);
     color: burlywood;

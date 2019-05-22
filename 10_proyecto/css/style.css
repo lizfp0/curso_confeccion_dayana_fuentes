@@ -4,8 +4,9 @@
     --font-main: 'Raleway', sans-serif;
     --font-title: 'Heebo', sans-serif;
     --size-title: 2rem;
-    --size-subtitle: 1rem;
-    --size-base: 1rem;
+    --size-subtitle: 1.2rem;
+    --size-base: calc(14rem/16); 
+    --size-small: calc(12rem/16); 
 }
 
 * {
@@ -42,7 +43,7 @@ body {
 }
 
 .header p {
-    font-size: var(--size-main);
+    font-size: var(--size-subtitle);
 }
 
 /*************** Footer ****************/
@@ -50,6 +51,7 @@ body {
 .footer {
     background-color: var(--color-fondo);
     color: var(--color-letra);
+    font-size: var(--size-small);
     margin-bottom: 1rem;;
     margin-top: 1rem;
     text-align: center;

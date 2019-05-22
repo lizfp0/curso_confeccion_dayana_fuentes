@@ -1,0 +1,71 @@
+:root {
+    --color-letra: darkseagreen;
+    --color-fondo: bisque;
+    --font-main: 'Raleway', sans-serif;
+    --font-title: 'Heebo', sans-serif;
+    --size-title: 2rem;
+    --size-subtitle: 1rem;
+    --size-base: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1;
+    font-size: var(--size-base);
+}
+
+/*************** Header ***************/
+.header {
+    background-color: var(--color-fondo) ;
+    color: var(--color-letra);
+    font-family: var(--font-title);
+    font-weight: bold;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding-left: 5rem;
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: var(--size-title);
+}
+
+.header p {
+    font-size: var(--size-main);
+}
+
+/*************** Footer ****************/
+
+.footer {
+    background-color: var(--color-fondo);
+    color: var(--color-letra);
+    margin-bottom: 1rem;;
+    margin-top: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+.footer address {
+    font-style: normal;
+}
+
+.footer a {
+    color: inherit;
+}
+
+.footer p {
+    font-size: var(--size-main);
+}
+

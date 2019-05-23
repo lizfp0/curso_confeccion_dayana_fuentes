@@ -69,7 +69,7 @@ function mostrar(texto = '') {
     0 / 0 = Indeterminación -->NaM  
 */
 
-function division (a = 0, b = 1) {
+function dividir (a = 0, b = 1) {
     return a / b
 }
 
@@ -77,22 +77,30 @@ function resta(a = 0, b = 0) {
     return a - b
 }
 
+function multiplicar(a = 0, b = 0) {
+    return a * b
+}
+
 function probar() {
-    let x = 2
-    let y = 3
+    let x = 8
+    let y = 9
     mostrar(suma(x, y))
     mostrar(suma(x))
     mostrar(suma(undefined, y))
     mostrar(suma())
-    mostrar(suma())
     mostrar()
 
-    mostrar(division(4,2))
-    mostrar(division(4))
-    mostrar(division())
-    mostrar(division(undefined,2))
+    mostrar(dividir(4,2))
+    mostrar(dividir(x))
+    mostrar(dividir())
+    mostrar(dividir(undefined,2))
     mostrar()
-    mostrar(resta(x, y))
+
+    mostrar(multiplicar(x,y))
+    mostrar(multiplicar(y))
+    mostrar(multiplicar())
+    mostrar(multiplicar(undefined,y))
+    mostrar()
 
     mostrar(resta(7,3))
 }

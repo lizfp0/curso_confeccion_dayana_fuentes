@@ -36,7 +36,18 @@ saludar()
 // ----------- SEPARACIÓN DE RESPONSABILIDADES O INTERESES (separation of concerns - Edsger W. Dijkstra)--------------
 
 /**
+ * JSDOc
+*/
+
+/*  0 / 4 = 0
+    4 / 0 = Infinito
+
+    0 / 0 = Indeterminación -->NaM  
+*/
+
+/**
  * Función suma
+ * @description recibe dos parametros y devuelve la suma de ambos
  * recibe dos parámetros
  * devuelve la suma de ambos
  * 
@@ -44,7 +55,8 @@ saludar()
  * @param {number}
  * @returns {number}
  * 
- Función pura*/
+ Función pura
+*/
 function suma (a = 0, b = 0) {
     /* let c = a + b
      return c */
@@ -53,8 +65,7 @@ function suma (a = 0, b = 0) {
 
 /**
  * Función mostrar
- * Recibe un texto y lo saca por pantalla
- * 
+ * @description Recibe un texto y lo saca por pantalla
  * @param {string | number}
  * @returns {void}
  * 
@@ -63,27 +74,40 @@ function mostrar(texto = '') {
     console.log(texto)
 }
 
-/*  0 / 4 = 0
-    4 / 0 = Infinito
-
-    0 / 0 = Indeterminación -->NaM  
-*/
+/**
+ * @param {number} a 
+ * @param {number} b
+ * @returns {number} 
+ */
 
 function dividir (a = 0, b = 1) {
     return a / b
 }
 
+/**
+ * @description recibe dos parámetros y devuelve la resta de ambos
+ * @param {number} a 
+ * @param {number} b 
+ * @returns {number}
+ */
+
 function resta(a = 0, b = 0) {
     return a - b
 }
+
+/**
+ * @param {number} a 
+ * @param {number} b 
+ * @returns {number}
+ */
 
 function multiplicar(a = 0, b = 0) {
     return a * b
 }
 
 function probar() {
-    let x = 8
-    let y = 9
+    let x = 9
+    let y = 8
     mostrar(suma(x, y))
     mostrar(suma(x))
     mostrar(suma(undefined, y))
@@ -100,9 +124,10 @@ function probar() {
     mostrar(multiplicar(y))
     mostrar(multiplicar())
     mostrar(multiplicar(undefined,y))
+    mostrar(multiplicar(x,'Pepe'))
     mostrar()
 
-    mostrar(resta(7,3))
+    mostrar(resta(x,y))
 }
 probar()
 

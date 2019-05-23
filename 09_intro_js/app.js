@@ -62,3 +62,10 @@ precio = precio * 1.06
 console.log(precioPrevio, precio) //crear una sentencia 
 
 //arrive una lista indexada 
+// let persona = {
+//     nombreCompleto {
+//         nombre = 'Dayana',
+//         apellido1 = 'Fuentes',
+//         apellido2 = 'Palma',
+//     }
+// }    

@@ -132,11 +132,11 @@ section.table {
     display: table;
 }
 
-section.table article {
+section .table article {
     display: table-cell;
 }
 
-section.flex {
+section .flex {
      display: flex;    /*para que se pongan uno al lado del otro */
     /* align-items: flex-start;    respetar el espacio de abajo */
     /* align-items: flex-end;    respetar el espacio de arriba */

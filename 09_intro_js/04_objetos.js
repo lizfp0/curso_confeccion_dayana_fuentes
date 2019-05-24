@@ -14,7 +14,7 @@ function ejemplo () {
          usuarios : ['Pepe', 'Elena', 'Rosa']
     } 
 
-    //arrive [], lista, arreglo
+    //array [], lista, arreglo
    let aDatos = [2, 4, 6, 7, 37]   //arrive
 
     console.log(coche)

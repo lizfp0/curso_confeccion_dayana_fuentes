@@ -19,6 +19,7 @@ true  //Tipo boolean
 
 
 //En TypeScript el tipado puede ser fuerte y estático //(que no se puede cambiar)
+{
 let b:number //Tipo number, sin valor
 b = 3  
 // b = 'Pepe'  //Error de tipos
@@ -26,7 +27,9 @@ b = 3
 
 let precio = 45.60  //number
 let producto = 'Gafas' //string
-//precio = producto //error de tipos
+//precio = producto //error de tipos 
+}
+
 
 function sumarConTipos(a: number, b:number) : number {
     return a + b
@@ -37,6 +40,7 @@ function sumarConTipos(a: number, b:number) : number {
     return 'El resultado es' + c
 }*/
 
-suma(12,25)
+/*suma(12,25)
 /* No lo aprueba porque es tipado  
-suma(12,'pepe') */
+suma(12,'pepe') */  
+

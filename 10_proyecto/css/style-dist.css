@@ -1,6 +1,8 @@
 /* @import url(./variable.css);  Se puede hacer de las dos maneras para tener todo ordenado, teniendo otro css y link en index o @import en primera linea en el primer csse*/
 
 * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box; 
     margin: 0;
     padding: 0;
@@ -73,7 +75,11 @@ main {
 main h2 {
     font-size: var(--size-title-section);
     font-weight: bold;
+    margin-bottom: -webkit-calc( var(--margin-vertical)/2);
+    margin-bottom: -moz-calc( var(--margin-vertical)/2);
     margin-bottom: calc( var(--margin-vertical)/2);
+    margin-top: -webkit-calc( var(--margin-vertical)/2);
+    margin-top: -moz-calc( var(--margin-vertical)/2);
     margin-top: calc( var(--margin-vertical)/2);
 }
 
@@ -136,9 +142,19 @@ section .table article {
 }
 
 section .flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;    /*para que se pongan uno al lado del otro */
     /* align-items: flex-start;    respetar el espacio de abajo */
     /* align-items: flex-end;    respetar el espacio de arriba */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column; 
 } 
 
@@ -150,6 +166,12 @@ section .flex {
  /* @media screen and (min-device-width: 600px) { y usar la opción del móvil en F12  */
 @media screen and (min-width: 600px) {   
   section .flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
   }
 }

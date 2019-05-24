@@ -29,13 +29,25 @@ console.log(b)  // 6
 
 /////////////////////
 
-let datos = [22, 67, 36]
-let persona = {nombre: 'Pepe', edad: 22}
+// let datos = [22, 67, 36]
+// let persona = {nombre: 'Pepe', edad: 22}
+const datos = [22, 67, 36]
+const persona = {nombre: 'Pepe', edad: 22}
+
+// datos = 3 Error por la propiedad const
 
 datos[datos.length] = 63
 datos.push(43)
 
+persona.altura = 178
+persona.edad = 23
+
+// persona = 178 ERROR
+
 // console.log(datos[0]) //los datos (números) se cuentan desde 0
 console.log(datos)
-console.log(persona.nombre)
+// console.log(persona.nombre)
+console.log(persona)
 
+
+////////// LOS ARRAY SON DINÁMICOS

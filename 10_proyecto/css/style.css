@@ -128,7 +128,7 @@ section.float::after {
     clear: both;
 }
 
-section.table {
+section .table {
     display: table;
 }
 

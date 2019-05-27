@@ -3,9 +3,19 @@
     src: url('../assets/sourcesanspro-regular-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'velocity_demo';
+    src: url('../assets/velocity_demo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
     font-family: "source_sans_proregular";
+}
+
+h1 {
+    font-family: "velocity_demo";
 }

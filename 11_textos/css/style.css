@@ -19,3 +19,16 @@ body {
 h1 {
     font-family: "velocity_demo";
 }
+
+.content_wrapper {
+    font-size: 1.1rem;
+}
+/* 
+section {
+    font-size: 0.8em;
+}*/
+
+p {
+    border: 1px solid;
+    padding: 1em;
+} 

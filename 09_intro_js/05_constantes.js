@@ -46,6 +46,9 @@ datos.push(43)
 
 persona.altura = 178
 persona.edad = 23
+//persona.nombre = ''  //Solo aparecería nombre, no valor
+//delete persona.nombre  //Borrar nombre y el valor
+
 
 // persona = 178 ERROR
 // persona = {}

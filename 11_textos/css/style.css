@@ -44,15 +44,19 @@ section.centrada p {
 .espacios {
     margin: 2rem 1rem;
     background-color: coral;
+    padding-bottom: 2.5%;
 }
 
 .espacios h2 {
     padding: 1rem;
+    margin: 0;
 }
 
 .espacios p {
     padding: 1rem;
     background-color: beige; 
+    margin-left: 2.5%; 
+    margin-right: 2.5%;
 }
 
 .flex {
@@ -62,11 +66,14 @@ section.centrada p {
 
 .flex h2 {
     padding: 1rem;
+    margin: 0;
 }
 
 .flex p {
     padding: 1rem;
     background-color: beige;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 @media screen and (min-width:690px) {
@@ -80,23 +87,18 @@ section.centrada p {
 .espacios p {
     width: 30%;
     float: left;
-    margin-left: 2.5%; 
 }
 
-.espacios p:last-of-type {
-    margin-right: 2.5%;
+.espacios p:not(:last-of-type){
+    margin-right: 0%;
 }
 
 .flex .flex-wrapper {
     display: flex;
 }
 
-.flex p {
-   margin-left: 2.5%;
-}
-
-.flex p:last-of-type {
-    margin-right: 2.5%;
+.flex p:not(:last-of-type) {
+    margin-right: 0%;
 }
 
 }

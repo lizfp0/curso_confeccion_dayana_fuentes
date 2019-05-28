@@ -24,6 +24,10 @@ body {
 
 h1 {
     font-family: "velocity_demo";
+    font-size: 4rem;
+    padding: 1rem 2rem;
+    border: 1px solid lightblue;
+    border-radius: 100px;
 }
 
 .content_wrapper {
@@ -96,6 +100,14 @@ section.centrada p {
 
 .flex .flex-wrapper {
     display: flex;
+}
+
+.flex h2 {
+    text-shadow: 2px 2px 2px  rgb(174, 202, 193);
+}
+
+.flex p {
+    box-shadow: 2px 2px 2px 2px rgb(102, 205, 171);
 }
 
 .flex p:not(:last-of-type) {

@@ -1,10 +1,31 @@
-.image_wrapper {
+main {
+    margin: 3%;
+}
+
+section.naturaleza::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.image_wrapper_left {
     width: 50%;
     float: left;
-    padding: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
 }
 
 img {
     max-width: 100%;
 }
 
+.image_wrapper_right {
+    width: 50%;
+    float: right;
+    padding-right: 2rem;
+    padding-bottom: 0.8rem;
+}
+
+footer {
+    
+}

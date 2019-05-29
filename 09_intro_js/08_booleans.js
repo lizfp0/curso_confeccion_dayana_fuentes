@@ -68,3 +68,39 @@ else {
 if (q === 0) {  // === idéntico  //== que algo es igual y flexible
     console.log(' q es exactamente 0')
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let nota = 0
+
+if (!nota) {
+
+}
+
+
+
+let b = Boolean(nota)
+b = !!nota
+
+let edad = 18
+
+if (edad < 18) {
+    console.log('Eres menor de edad')
+} else if (edad < 35) {
+    console.log('Eres joven')
+} else if (edad < 50) {
+    console.log('Empieza a tener cuidado')
+} else {
+    console.log('Lo siento por ti')
+}

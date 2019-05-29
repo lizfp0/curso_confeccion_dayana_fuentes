@@ -33,13 +33,27 @@ img {
 header, footer {
     background-color: lightcyan;
     color: burlywood;
-    line-height: 8rem;
     text-align: center;
+}
+
+header h1 , footer {
+    line-height: 8rem; 
 }
 
 h1 {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+header p {
+    padding-bottom: 1rem;
+    visibility: hidden;
+    /* display: none; */
+}
+
+header:hover p {
+    visibility: initial;
+    /* display: initial; */
 }
 
 ul {

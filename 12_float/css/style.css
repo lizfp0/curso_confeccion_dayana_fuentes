@@ -1,5 +1,9 @@
+body {
+    margin: 0;
+}
+
 main {
-    margin: 3%;
+    margin: 5%;
 }
 
 section.naturaleza::after {
@@ -26,6 +30,57 @@ img {
     padding-bottom: 0.8rem;
 }
 
-footer {
-    
+header, footer {
+    background-color: lightcyan;
+    color: burlywood;
+    line-height: 8rem;
+    text-align: center;
 }
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    /* list-style-position: inside;
+    list-style-type: square; */
+    list-style: inside square;
+}
+
+.table-wrapper-right{
+    float: right;
+    padding-left: 2rem;
+    padding-bottom: 0.5rem;
+    padding-right: 2rem;
+}
+
+.table-wrapper-right:hover table {
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+
+td {
+    padding: 0.5rem 1rem;
+    border: 1px solid;
+}
+
+
+
+
+
+/* COMPLETAR CSS DE ASIDE (PUBLICIDAD 
+aside:before, aside:after {
+    content: '';
+    display: block;
+    padding: 0.8rem;
+    background-color: lightblue;
+    opacity: 0.6;
+}
+
+img.img-wrapper-left {
+    width: 50%;
+    float: right;
+    padding-right: 2rem;
+    padding-bottom: 0.8rem;
+}*/

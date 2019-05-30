@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+header {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /*Horizontal */
+    align-items: center;    /*vertical */
+    background-color: rgba(4, 164, 218, 0.479);
+    background-image: url(../assets/seul_3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+
+h1 {
+    color: darkseagreen;
+}
+
+

@@ -1,0 +1,80 @@
+section.gama {
+    display: flex;
+}
+.gama div {
+    background-color: rgb(116, 219, 116);
+    height: 10rem;
+    width: 10rem;
+}
+.gama div:nth-of-type(1) {
+    background-color: rgb(240, 127, 127);
+}
+.gama div:nth-of-type(2) {
+    background-color: #66A5E8;
+}
+.gama div:nth-of-type(3) {
+    background-color: #70FFD5;
+}
+.gama div:nth-of-type(4) {
+    background-color: #FFA256;
+}
+.gama div:nth-of-type(5) {
+    background-color: #4451EB;
+}
+
+section.transparencia {
+    margin: 1rem;
+    border: 1px solid;
+    padding: 1rem;
+    width: 90%;
+    height: 35vh;
+    background-color: cadetblue;
+    display: flex;
+}
+
+.transparencia div {
+    height: 10rem;
+    width: 10rem;
+    background-color: rgb(240, 173, 150);
+}
+
+.transparencia div:nth-of-type(2) {
+    background-color: rgba(248, 118, 118, 0.315);
+}
+
+.transparencia p {
+    font-size: 5rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.664);
+}
+
+/*.transparencia::after {     clearfix 
+    content: '';
+    display: block;
+    clear: both;
+}*/
+
+.opaciti {
+    margin-top: 3rem;
+    opacity: 0.2;
+}
+
+.opaciti:hover {
+    opacity: 1;
+}
+
+.fondo {
+    /* background-color: rgba(224, 255, 255, 0.377); */
+    opacity: 0.3;
+    background-image: url(../assets/flores_de_cerezo.jpg);
+}
+
+.fondo h2 {
+    opacity: initial;
+}
+
+.gradiente {
+    text-align: center;
+    background: radial-gradient(ellipse at center, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
+    background: linear-gradient(to left,rgb(224, 96, 54), rgb(218, 108, 71),rgb(250, 162, 133));
+}

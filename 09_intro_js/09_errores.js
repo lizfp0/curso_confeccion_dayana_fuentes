@@ -2,10 +2,14 @@
 
 
 
-
-
-
-
+function isValidNumber(n) {
+    let r = true
+    if(isNaN(n) || typeof n == 'boolean'
+    || Array.isArray(n) || n === ''  || n === null) {
+        r = false
+    }
+    return r
+}
 
 
 

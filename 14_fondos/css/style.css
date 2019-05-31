@@ -8,15 +8,46 @@ header {
     justify-content: center; /*Horizontal */
     align-items: center;    /*vertical */
     background-color: rgba(4, 164, 218, 0.479);
-    background-image: url(../assets/seul_3.jpg);
+    background-image: url(../assets/microsoft-edificio-700x500.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-blend-mode: difference;
 }
-
+/* 
 h1 {
     color: darkseagreen;
+} */
+
+h1 span {
+    /* display: none; */
+    color: rgb(0, 0, 0, 0);
 }
 
+.content-wrapper {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.content-wrapper section:nth-of-type(1) {
+    background-image: url(../assets/seul_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content-wrapper section:nth-of-type(2) {
+    background-image: url(../assets/img-noise-150x150.png);
+    background-repeat: no-repeat;
+    /* background-position: right left depende de la imágen (cambiar con la imagen iguana) */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main_footer {
+    background-color: rgb(156, 141, 121);
+    color: rgb(196, 78, 78);
+    text-align: center;
+    padding: 1rem;
+}
 

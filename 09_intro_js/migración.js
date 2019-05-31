@@ -103,8 +103,8 @@ let msj = 'Juan tiene ' + n  // 'Juan tiene 23'
 console.log(typeof n)
 
 // Casting a number
-
-
+let indice = '34'
+let incremento = indice * 0.10
 
 // Casting a boolean
 let w
@@ -125,4 +125,7 @@ w = ' '
 w = 'Pepe'
 w = {}
 w = []
+
+// Operadores
+// Aritméticos: + - * / %(modulo)
 

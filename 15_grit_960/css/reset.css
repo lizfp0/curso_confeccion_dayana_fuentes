@@ -117,7 +117,6 @@ section {
 /*
   Override the default (display: inline) for
   browsers that do not recognize HTML5 tags.
-
   IE8 (and lower) requires a shiv:
   http://ejohn.org/blog/html5-shiv
 */
@@ -153,7 +152,6 @@ ul {
 li {
 /*
   For IE6 + IE7:
-
   "display: list-item" keeps bullets from
   disappearing if hasLayout is triggered.
 */

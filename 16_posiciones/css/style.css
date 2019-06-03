@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header, footer {
+    background-color: bisque;
+    color: cadetblue;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 90%;
+    margin: 1rem auto;
+    min-height: 80vh;
+}
+
+p {
+    background-color: rgb(217, 217, 248);
+    padding: 0.5rem 1rem;
+}
+
+.relative {
+    position: relative;
+    top: 2rem;
+    left: 2rem;
+    background-color: rgba(238, 161, 161, 0.609);
+}
+
+.absolute_wrapper {
+    position: relative;
+}
+
+.absolute {
+    background-color: rgba(238, 161, 161, 0.609);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* right: 6rem; */
+    /* width: 50%; */
+    /* margin-right: 6rem; */
+}

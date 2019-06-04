@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+header {
+    position: relative;
+    min-height: 100vh;
+    background-color: rgba(4, 164, 218, 0.479);
+    display: flex;
+    justify-content: center; /*Horizontal */
+    align-items: center;    /*vertical */
+    z-index: 20;
+}
+
+header::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0.4;
+    background-image: url(../assets/u.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    color: brown;
+}
+
+.content-wrapper {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+

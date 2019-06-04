@@ -1,8 +1,7 @@
 
 describe('Función esPar', () => {
-    let = esPar = requiere('../11_pares_try.js')
-    console.log(esPar)
-    let n
+    let f = requiere('../11_pares_try.js')
+    
 
     it('should be "par" if n = 0', () => {
         n = 0

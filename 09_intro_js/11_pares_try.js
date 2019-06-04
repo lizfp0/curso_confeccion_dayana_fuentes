@@ -122,7 +122,8 @@ GESTIÓN DE ERROR
     console.log('x vale ', x)
 */
 
-module.exports = esPar; 
+exports.esPar = esPar; 
+exports.mostrar = mostrar; 
 
 
 

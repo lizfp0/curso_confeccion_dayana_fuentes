@@ -50,4 +50,8 @@ h1 {
     margin-right: 4rem;
 }
 
-
+nav {
+    position: absolute;
+    top: 60%;
+    z-index: 30;
+}

@@ -5,11 +5,9 @@ body {
 header {
     position: relative;
     min-height: 100vh;
-    background-color: rgba(4, 164, 218, 0.479);
     display: flex;
     justify-content: center; /*Horizontal */
     align-items: center;    /*vertical */
-    z-index: 20;
 }
 
 header::before {
@@ -22,7 +20,7 @@ header::before {
     left: 0;
     z-index: 10;
     opacity: 0.4;
-    background-image: url(../assets/u.jpg);
+    background-image: url(../assets/flor.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -30,6 +28,21 @@ header::before {
 
 h1 {
     color: brown;
+    z-index: 20;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 20%;
+    z-index: 20;
+}
+
+.logo img {
+    max-width: 100%;
+    min-width: 80px;
 }
 
 .content-wrapper {

@@ -8,11 +8,14 @@ body {
 
 header, footer {
     background-color: bisque;
-    color: cadetblue;
-    min-height: 10vh;
+    color: cadetblue;  
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+header {
+    min-height: 10vh;
 }
 
 main {
@@ -47,3 +50,46 @@ p {
     /* width: 50%; */
     /* margin-right: 6rem; */
 }
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3rem;
+}
+
+footer:hover {
+    min-height: 10vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.overflow {
+    height: 40vh;
+    overflow: scroll;
+}
+/* width */
+.overflow::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+.overflow::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  /* Handle */
+.overflow::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+.overflow::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

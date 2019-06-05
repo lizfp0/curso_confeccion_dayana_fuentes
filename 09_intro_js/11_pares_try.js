@@ -8,7 +8,7 @@
  *               es convertible a un número válido
  *               rechazando objects, arrays, booleans, 
  *               null, undefined, '' y strings no numéricos.
- * @param {any (*)} n 
+ * @param {any} n 
  * @returns {boolean}
  */
 function isValidNumber(n) {
@@ -36,19 +36,23 @@ function isEntero(n = 0) {
  * @returns {boolean}
  */
 
- function esPar(n) {
-    let r = true
+function esPar(n) {
+    let r = true 
     if (!isValidNumber(n)) {
-        //Excepción: n no es un número
-        return -2
+        // Excepción: n no es un número // antes -2
+        const error = new Error(`${n} no es un número`)
+        error.numero = 1
+        throw error
     } else if (!isEntero(n)) {
-        //Excepción: n no es entero
-        return -1
-    } else if (n%2) {
+        // Excepción: n no es entero // antes -1
+        const error = new Error(`El número ${n} no es entero`)
+        error.numero = 0
+        throw error
+    } else if (n%2)  {
         r = false
     }
     return r
- }
+  }
 
  /*EJEMPLO 
  let x = 1
@@ -61,45 +65,35 @@ function isEntero(n = 0) {
  console.log( ! (x%2) )
  */
 
- /**
- * @description Función que muestra si un número es par o impar
- * @param {number}: n
- * @returns {void}
- */
-
- function mostrar(n) {
+  /**
+   * @description Función que muestra si un número es par o impar
+   * @param {number}: n
+   * @returns {void}
+   */
+  function mostrar(n) {
+    let output = ''
     let mensajes = [
-     `El número ${n} es impar`, 
-     `El número ${n} es par`,
-     `El número ${n} no es entero`,
-     `${n} no es un número`,
+        `El número ${n} es impar`,
+        `El número ${n} es par`,
     ]
-    let i = Number(esPar(n))  // -2, -1, 0, 1
-    if ( i<0 ) { //Código de error
-        i = -i + 1 // -1 -> 2  //-2 -> 3
+    let excepciones = [
+         `El número ${n} no es entero`,
+        `${n} no es un número`
+    ]
+    try {
+        let i = Number(esPar(n))   //i: 0, 1
+        output = mensajes[i]
+    } catch (error) { // error: -2 -1
+         // i = -error + 1 // -1 -> 2 // -2 -> 3
+         output = excepciones[error.numero]
+         //output = error.message
     }
-    console.log(mensajes[i])
+    console.log(output)
 }
 
-// function probar() {
-//     let x
-//     x = 1
-//     x = 2
-//     x = 345
-//     x = 98
-//     x = 0
-//     x = -4
-//     x = -5
-//     x = 4.3
-//     x = - 56.7
-//     x = 'Pepe'
-//     x = '56'
-//     mostrar(x)
-//     // x = 2.1
-//     // console.log(isEntero(x))
-// }
+mostrar('pepe')
+mostrar(2.4)
 
-//probar()
 
 /*
 GESTIÓN DE ERROR

@@ -1,7 +1,6 @@
-
-	li { /* Los li son contenedores, para poder fijar desde ellos posiciones absolutas */
-		position: relative;
-		}
+li { /* Los li son contenedores, para poder fijar desde ellos posiciones absolutas */
+	position: relative;
+}
 
 /*	el menú principal */
 
@@ -9,11 +8,13 @@
 		list-style-type: none;
 		padding: 0;
 		margin: 0;
-		}
+	}
+
 	nav > ul > li { /* El primer nivel del menú */
 		float:left;
 		min-width: 7em;
-		}
+	}
+
 	nav a { /* Cualquier a dentro de nav */
 		color: inherit;
 		text-decoration: none;
@@ -25,12 +26,13 @@
 		border-radius: .5em;
 		text-align: center;
 	}
+	
 	nav > ul a:focus,
 	nav > ul a:hover
 	{ /* Cualquier a dentro de nav */
-		color:#fc6; /*naranja*/
+		background-color: rgb(253, 163, 130);
+		color: rgb(95, 158, 160);
 		border-color: #fff; /*blanco*/
-		background-color: rgba(200,200,200,0.2)
 	}
 
 /* =================== */
@@ -41,7 +43,7 @@
 	 	display: none
 	}
 	li:hover > ul { /* El segundo nivel del menú se muestra */
-	 	display: block;
+	 	display: initial;
         position: absolute; /*Determina que el submenu empuje o no el contenido del sitio al desplegrase*/
 	}
 

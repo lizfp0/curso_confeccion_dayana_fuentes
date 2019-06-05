@@ -1,20 +1,10 @@
-nav a {
-	color: inherit;
-	text-decoration: none;
-}
-
-nav ul {
-	list-style-type: none;
-}
-
-nav.footer {
-	background-color: bisque;
-	color: cadetblue;
-	margin: 1rem;
-}
-
 @media screen and (min-width: 1000px)
 {
+
+	.content-wrapper {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
 
 li { /* Los li son contenedores, para poder fijar desde ellos posiciones absolutas */
 	position: relative;
@@ -85,5 +75,29 @@ li { /* Los li son contenedores, para poder fijar desde ellos posiciones absolut
 	}
 	img {
 		width: 100%
+	}
+}
+
+@media screen and (min-width: 500px) {
+	.content-wrapper {
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+}
+
+@media screen and (min-width: 650px) {
+
+	.content-wrapper {
+		margin-left: 2.8rem;
+		margin-right: 2.8rem;
+	}
+
+	nav.footer,
+	nav.icon  {
+		display: none;
+	}
+
+	nav.horizontal {
+		display: initial;
 	}
 }

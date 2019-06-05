@@ -8,9 +8,9 @@ header {
     color: cadetblue;
     min-height: 30vh;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    text-align: center;
+
 }
 
 section.flex {

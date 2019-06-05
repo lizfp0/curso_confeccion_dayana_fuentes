@@ -49,11 +49,21 @@ h1 {
     min-width: 80px;
 }
 
-nav {
-    position: absolute; 
+nav.icon, 
+nav.horizontal {
+    position: absolute;  
     z-index: 30; 
-    top: 55%;
-    /* left: 10%; */   
+    top: 3rem;
+    left: 3rem; 
+}
+
+nav.horizontal {
+    display: none;
+}
+
+nav.icon {
+    color: cadetblue;
+    font-size: 3rem;
 }
 
 .content-wrapper {

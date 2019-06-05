@@ -10,7 +10,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 section.flex {
@@ -24,8 +23,7 @@ section.flex {
     flex-direction: row;
 
     justify-content: flex-start;
-    justify-content: flex-end;
-    
+    justify-content: flex-end;  
     justify-content: space-between;
     justify-content: space-around;
 

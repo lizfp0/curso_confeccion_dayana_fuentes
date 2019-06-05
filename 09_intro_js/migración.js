@@ -126,6 +126,8 @@ w = 'Pepe'
 w = {}
 w = []
 
+si (w) {}
+
 // Operadores
 // Aritméticos: + - * / %(modulo)
 

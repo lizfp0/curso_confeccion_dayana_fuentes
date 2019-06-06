@@ -55,6 +55,7 @@ div.superior {
     div.superior img, 
     div.superior embed {
         width: 4.5rem;
+        display: flex;
     }
 
     div.superior embed path {
@@ -158,7 +159,29 @@ footer {
         background-color: rgb(224, 186, 186);
         text-align: center;
         font-weight: bold;
-	}
+    }
+
+    nav.horizontal ul>li{
+        display: flex;
+        align-items: center;
+     }
+ 
+     nav.horizontal>ul>li:not(:last-of-type)::after {
+         content: "|";
+         font-weight: bold;
+    }
+    
+/* =================== */
+/* = submenús        = */
+/* =================== */
+			
+	li ul { /* El segundo nivel del menú oculto*/
+        display: none
+   }
+   li:hover > ul { /* El segundo nivel del menú se muestra */
+        display: initial;
+       /*position: absolute; Determina que el submenu empuje o no el contenido del sitio al desplegrase */
+   }
 }
 
 @media screen and (min-width: 800px) {
@@ -191,5 +214,6 @@ footer {
 
     nav.horizontal>ul>li:not(:last-of-type)::after {
         content: "|";
+        font-weight: bold;
     }
 }

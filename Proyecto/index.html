@@ -14,27 +14,31 @@
 
 <body class="inicio">
     <header class="main_header">
-        <h1>Seul</h1>
         <nav>
             <ul>
-                <li><a href="#seul"></a>Seúl</li>
-                <li><a href="#clima"></a>Clima</li>
-                <li><a href="#vestimenta_tradicional"></a>Vestimenta Tradicional</li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#seul"></a>Seúl
+                <ul>        
+                    <li><a href="#historia"></a>Historia</li>
+                    <li><a href="#clima"></a>Clima</li>
+                    <li><a href="#vestimenta_tradicional"></a>Vestimenta Tradicional</li>
+                </ul>
+                </li>
                 <li><a href="./gastronomia.html"></a>Gastronomía</li>
-                <li><a href="./kpop.html"></a>Kpop</li>
+                <li><a href="./entretenimiento.html"></a>Entretenimiento</li>
             </ul>
         </nav>
     </header>
     <div class="content_wrapper">
         <main>
-            <section class="seul">
+            <section class="seul" id="seul">
                 <header class="seul_header">
-                    <h2>Seúl</h2>
+                    <h1>Seúl</h1>
                 </header>
                 <div class="img_seul">
                     <img src="./assets/seul_3.jpg" alt="Seúl">
                 </div>
-                <p>Seúl es la capital de Corea del Sur desde la creación de esta república en 1948, la capital histórica
+                <p><strong>Seúl</strong> es la capital de Corea del Sur desde la creación de esta república en 1948, la capital histórica
                     de
                     Corea desde hace más de 600 años y la ciudad más poblada de la península de Corea.</p>
                 <p>Situada en el noroeste del país, a unos 50 kilómetros de la zona desmilitarizada que separa las dos
@@ -47,8 +51,8 @@
                 <p>Con unos 10 millones de habitantes en la ciudad propiamente dicha, y 24,5 millones en toda el área
                     metropolitana, que incluye el puerto de Incheon y la provincia de Gyeonggi, es la cuarta área
                     metropolitana más grande del mundo.</p>
-                <header>
-                    <h3>Historia</h3>
+                <header id="historia">
+                    <h2>Historia</h2>
                 </header>
                 <p>La ciudad tiene su origen en tiempos del reino de Baekje, uno de los Tres Reinos de Corea.
                     Wirye-seong, la capital de este reino, se comenzó a colonizar en el año 17 a. C. Se cree que su
@@ -80,11 +84,11 @@
                     Seúl y su posterior envío a campos de concentración.2​ En 1992, la policía surcoreana habría
                     detenido antes de los JJ.OO. a miles de personas sin hogar, para enviarlas a campos de trabajo y
                     ocultar su presencia.</p>
-                <footer class="up_footer">
+                <div class="button">
                     <a href="./index.html" rel="tag" title="Inicio"><i class="fas fa-level-up-alt"></i></a>
-                </footer>
+                </div>
             </section>
-            <section class="clima">
+            <section class="clima" id="clima">
                 <header class="clima_header">
                     <h2>Clima</h2>
                 </header>
@@ -197,11 +201,11 @@
                         <td>66.9</td>
                     </tr>
                 </table>
-                <footer class="up_footer">
-                    <a href="./index.html" rel="tag" title="Inicio"><i class="fas fa-level-up-alt"></i></a>
-                </footer>
+                <div class="button">
+                        <a href="./index.html" rel="tag" title="Inicio"><i class="fas fa-level-up-alt"></i></a>
+                </div>
             </section>
-            <section class="vestimenta_tradicional">
+            <section class="vestimenta_tradicional" id="vestimenta_tradicional">
                 <header class="vestimenta_header">
                     <h2>Vestimenta Tradicional</h2>
                 </header>
@@ -235,9 +239,9 @@
                 <p>También existen otros tipos de complementos al hanbok, como las chaquetas (magoja) o chalecos
                     (jokki), pero son opcionales dependiendo de la temperatura que haga, aunque es verdad que visten
                     más.</p>
-                <footer class="up_footer">
-                    <a href="./index.html" rel="tag" title="Inicio"><i class="fas fa-level-up-alt"></i></a>
-                </footer>
+                    <div class="button">
+                            <a href="./index.html" rel="tag" title="Inicio"><i class="fas fa-level-up-alt"></i></a>
+                    </div>
             </section>
         </main>
     </div>

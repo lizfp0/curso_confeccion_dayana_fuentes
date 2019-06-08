@@ -42,3 +42,8 @@ text-align: center;
     display: block;
     padding: 0.8rem;
 }
+
+div.button {
+    background-color:coral;
+    width: 10;
+}

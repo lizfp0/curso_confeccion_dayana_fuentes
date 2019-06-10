@@ -11,9 +11,17 @@
 }
 
 body {
-    font-family: var(--font-main);
     line-height: 1;
+    font-family: var(--font-main);
     font-size: var(--size-base);
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    grid-template-rows: 2fr auto auto 1fr;
+    grid-template-areas: 
+        "header header"
+        "main main"
+        "aside aside"
+        "footer footer";
 }
 
 /*************** Header ***************/
@@ -22,15 +30,14 @@ body {
     color: var(--color-letra);
     font-family: var(--font-title);
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; 
     margin-top: 2rem;
-    padding-left: 5rem;
+    padding: 3rem;
     text-align: center;
+    grid-area: header;
 }
 
 .header h1 {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
     font-size: var(--size-title);
 }
 
@@ -44,11 +51,10 @@ body {
     background-color: var(--color-fondo);
     color: var(--color-letra);
     font-size: var(--size-small);
-    margin-bottom: 1rem;;
-    margin-top: 1rem;
     text-align: center;
     margin-top: 1rem;
     padding: 2rem;
+    grid-area: footer;
 }
 
 .footer address {
@@ -66,11 +72,22 @@ body {
 
 /**************** Main *****************/
 
-main {
-    margin: var(--margin-vertical) var(--margin-lateral);
+main, aside {
+    margin-right: var(--margin-parrafo);
+    margin-left: var(--margin-vertical);
 }
 
-main h2 {
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+    margin-bottom: var(--margin-vertical);
+}
+
+main h2, 
+aside h2 {
     font-size: var(--size-title-section);
     font-weight: bold;
     margin-bottom: calc( var(--margin-vertical)/2);
@@ -87,7 +104,7 @@ main p {
     margin-top: var(--margin-parrafo);
 }
 
-/**************** Estilos de las secciones .inline-block *****************/
+/**************** Estilos de las secciones *****************/
 
 section {
     margin-top: var(--margin-vertical);
@@ -98,59 +115,85 @@ section>header {
     color: var(--color-coral-fondo);
     background-color: var(--color-letra);
     padding: 0.3rem 1rem;
+    text-align: center;
     margin-bottom: var(--margin-parrafo);
 }
 
 section article {
-    width: 50%;  /* se refiero al elemento, contexto */
     padding: 1rem;
     background-color: var(--color-coral-fondo);
     border: 1px solid var(--color-gris-borde);
 }
 
-section.inline-block article {
-    display: inline-block;
-    vertical-align: top;
-}
-
-section.inline-block article:nth-of-type(2) {
-    margin-left: -4px;
-}
-
-section.float article{
-    float: left;
-}
-
-section.float::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-section .table {
-    display: table;
-}
-
-section .table article {
-    display: table-cell;
-}
-
-section .flex {
-    display: flex;    /*para que se pongan uno al lado del otro */
-    /* align-items: flex-start;    respetar el espacio de abajo */
-    /* align-items: flex-end;    respetar el espacio de arriba */
-    flex-direction: column; 
-} 
-
- section .flex article { 
+/* *************Estilo del aside***************** */
+.publi {
     width: 100%;
+    height: 50vh;
+    background-image: url(../assets/ron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
- /* Esto es una media queri */
- /* @media screen and (min-device-width: 600px) { y usar la opción del móvil en F12  */
-@media screen and (min-width: 600px) {   
-  section .flex {
-    flex-direction: row;
-  }
+.enano {
+    transform: scale(0);
+}
+
+@media screen and (min-width: 600px) {
+
+    body {
+        grid-template-columns: 4fr 1fr ;
+        grid-template-areas: 
+            "header header"
+            "main aside"
+            "main aside"
+            "footer footer"; 
+    }
+
+    main, aside {
+        margin-right: calc(var(--margin-parrafo) / 2) ;
+        margin-left: calc((var--margin-vertical) / 2) ;
+    }
+
+    aside {
+        margin-top: var(--margin-vertical);
+    }
+
+    .publi {
+        width: 100%;
+        background-image: url(../assets/cacique.jpg);
+        height: 15vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+@media screen and (min-width: 800px) {  
+    
+    body {
+        grid-template-columns: 4fr 1fr ;
+    }
+
+    section.grid {
+        display: grid;    
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        grid-column-gap: 0.8rem;
+        grid-template-areas: 
+            "header header header"
+            "col1 col2  col3";
+    }
+
+    section>header {
+        grid-area: header;
+    }
+
+    .publi {
+        width: 100%;
+        background-image: url(../assets/ron-cacique.jpg);
+        height: 70vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 }
 

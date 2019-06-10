@@ -1,0 +1,18 @@
+:root {
+    --color-letra: rgb(124, 172, 113);
+    --color-fondo: rgb(241, 177, 124);
+    --color-coral-fondo:rgb(241, 177, 124) ;
+    --color-gris-borde: rgb(224, 226, 110);
+    --font-main: 'Raleway', sans-serif;
+    --font-title: 'Heebo', sans-serif;
+    --size-main: 1rem;
+    --size-title: calc( var(--size-small) * 3);
+    --size-subtitle:calc( var(--size-small) * 2);
+    --size-title-section: 1.2rem;
+    --size--title-article: 1rem;
+    --size-base: calc(14rem/16); 
+    --size-small: calc(12rem/16); 
+    --margin-vertical: 1.5rem;
+    --margin-lateral: 2rem;
+    --margin-parrafo: 1rem;
+}

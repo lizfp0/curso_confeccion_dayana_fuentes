@@ -30,9 +30,8 @@ body {
     color: var(--color-letra);
     font-family: var(--font-title);
     font-weight: bold;
-    margin-bottom: 2rem; 
-    margin-top: 2rem;
-    padding: 3rem;
+    margin-bottom: 3rem; 
+    padding: 4rem;
     text-align: center;
     grid-area: header;
 }
@@ -154,9 +153,9 @@ section article {
         margin-left: calc((var--margin-vertical) / 2) ;
     }
 
-    aside {
+    /* aside {
         margin-top: var(--margin-vertical);
-    }
+    } */
 
     .publi {
         width: 100%;
@@ -170,7 +169,7 @@ section article {
 @media screen and (min-width: 800px) {  
     
     body {
-        grid-template-columns: 4fr 1fr ;
+        grid-template-columns: 3fr 1fr ;
     }
 
     section.grid {

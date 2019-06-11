@@ -7,7 +7,7 @@
     "start": "sass sass/:css/ --watch",
     "version": "npm --version",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass sass/:css/ --watch" 
+    "sass": "sass sass/:css/ --watch --no-source-map" 
   },
   "keywords": [],
   "author": "Dayana Fuentes",

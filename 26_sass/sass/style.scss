@@ -1,23 +1,86 @@
-body {
-    margin: 0;
+/* Esto es un comentario CSS */ 
+
+//Esto es un comentario de SASS
+//No se copila
+
+$color-principal: bisque;
+$color-fondo:darkseagreen;
+$margen-base: 1rem;
+
+@mixin sin_mvert {
+    margin-top: 0;
+    margin-bottom: 0;
 }
+
+@mixin colores_invertidos($oscuro: 20, $claro:20) {
+    background-color: darken($color: $color-principal, $amount: $oscuro);
+    color: lighten($color: $color-fondo, $amount: $claro);
+}
+
+body {
+    margin: ($margen-base + $margen-base)/2 - $margen-base;
+    display: grid;
+    grid-template-rows: 2fr auto auto 1fr;
+}
+
+.main {
+    background-color: $color-fondo;
+    color: $color-principal;
+    display: flex;
+}
+
 .main_header {
+    @extend .main;
+    justify-content: center;
+    text-align: center; 
+    h1 {
+        @include sin_mvert();
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+main {
+   min-height: 60vh; 
+}
+
+section.intro {
+    margin: 2.6rem;
+    header {
+        @include colores_invertidos()
+    }
+    article {
+        div {
+            div {
+                p {
+                    color: chocolate;
+                }
+            }
+        }
+        aside {
+            div {
+                    color: aquamarine;
+            }
+        }
+    }
+}
+
+section.sample {
+    margin: 2.6rem;
+    header {
+        @include colores_invertidos(50, 50)
+    }
+}
+
+
+@import './_parrafo.scss';
+
+.main_footer {
+    @extend .main;
     background-color: darkseagreen;
     color: bisque;
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center; 
-    h1 {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
 }
-
-section {
-    margin: 2.6rem;
-    header {
-        background-color: bisque;
-        color: darkseagreen;
-    }
-}
-

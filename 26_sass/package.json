@@ -1,0 +1,15 @@
+{
+  "name": "26_sass",
+  "version": "1.0.0",
+  "description": "Ejemplos del uso del SASS",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass sass/:css/ --watch",
+    "version": "npm --version",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass sass/:css/ --watch" 
+  },
+  "keywords": [],
+  "author": "Dayana Fuentes",
+  "license": "ISC"
+}

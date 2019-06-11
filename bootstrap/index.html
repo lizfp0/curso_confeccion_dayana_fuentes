@@ -17,8 +17,8 @@
 <body>
     <header class="main_header">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-xs">
                     <h1>Uso de Bootstrap</h1>
                 </div>
             </div>
@@ -26,7 +26,7 @@
     </header>
     <div class="container">
         <main class="row">
-            <section class="col-xs-12 col-lg-6">
+            <section class="col-xs-12 col-lg-6 mt-4 mb-4">
                 <h2>Uso de Bootstrap</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quasi cumque error odit ut
                     similique officia sapiente eius nam adipisci laboriosam earum, non architecto incidunt. Magnam sunt
@@ -37,9 +37,43 @@
                 <p>Dolorum, itaque. Debitis inventore facilis quasi, fugit ipsa temporibus modi rerum ex, iste iure
                     dolor fuga veritatis explicabo id. Rem odit veniam esse minima aut doloribus? Saepe impedit
                     accusamus ratione.</p>
-                <img src="https://via.placeholder.com/500x350/" alt="Placeholder de Imagen">
+                <img class="img-fluid rounded-pill" src="https://via.placeholder.com/500x350/"
+                    alt="Placeholder de Imagen">
             </section>
-            <aside class="col-xs-12 col-lg-6">
+            <section class="col-xs-12 col-lg-8 mt-4 mb-4">
+                <h2>Ejemplo de Bootstrap</h2>
+                <table class="table table-bordered">
+                    <tr>
+                        <th colspan="2" rowspan="2">Preferencias de viajes</th>
+                        <th colspan="3" scope="colgroup">Destinos</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Corea del Sur</th>
+                        <th scope="col">Japón</th>
+                        <th scope="col">China</th>
+                    </tr>
+                    <tr>
+                        <th rowspan="3" scope="rowgroup">Rangos de edad</th>
+                        <th scope="row">Menores de 18</th>
+                        <td>38%</td>
+                        <td>25%</td>
+                        <td>37%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Entre 18 y 30</th>
+                        <td>32%</td>
+                        <td>37%</td>
+                        <td>31%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mayores de 30</th>
+                        <td>30%</td>
+                        <td>38%</td>
+                        <td>32%</td>
+                    </tr>
+                </table>
+            </section>
+            <aside class="col-xs-12 col-lg-6 mt-4 mb-4">
                 <h2>Otros frameworks CSS</h2>
                 <ul>
                     <li>Item 1</li>
@@ -52,10 +86,10 @@
             </aside>
         </main>
     </div>
-    <footer class="main_footer">
+    <footer class="main_footer d-flex align-items-center">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
+            <div class="row justify-content-center ">
+                <div class="col-xs">
                     <address>Dayana Fuentes</address>
                 </div>
             </div>

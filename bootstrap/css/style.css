@@ -12,14 +12,19 @@ body {
 }
 
 .main_header {
-    min-height: 10vh;
     font-family: var(--font-title);
     background-color: var(--color-fondo);
     color: var(--color-letra);
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
 }
 
 .main_footer {
     background-color: var(--color-fondo);
     color: var(--color-letra);
     min-height: 10vh;
+}
+
+.main_footer address {
+    margin-bottom: 1rem;
 }

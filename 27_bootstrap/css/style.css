@@ -1,6 +1,6 @@
 :root {
-    --color-letra: rgb(124, 172, 113);
-    --color-fondo: rgb(241, 177, 124);
+    --letra: rgb(124, 172, 113);
+    --fondo: rgb(241, 177, 124);
     --color-coral-fondo:rgb(241, 177, 124) ;
     --color-gris-borde: rgb(224, 226, 110);
     --font-main: 'Raleway', sans-serif;
@@ -20,8 +20,6 @@ body {
 }
 
 .main_footer {
-    background-color: var(--color-fondo);
-    color: var(--color-letra);
     min-height: 10vh;
 }
 

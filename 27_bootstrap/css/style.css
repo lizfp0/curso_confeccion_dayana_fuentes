@@ -1,8 +1,4 @@
 :root {
-    --letra: rgb(124, 172, 113);
-    --fondo: rgb(241, 177, 124);
-    --color-coral-fondo:rgb(241, 177, 124) ;
-    --color-gris-borde: rgb(224, 226, 110);
     --font-main: 'Raleway', sans-serif;
     --font-title: 'Heebo', sans-serif;
 }
@@ -13,8 +9,6 @@ body {
 
 .main_header {
     font-family: var(--font-title);
-    background-color: var(--color-fondo);
-    color: var(--color-letra);
     padding-top: 1.8rem;
     padding-bottom: 1.8rem;
 }

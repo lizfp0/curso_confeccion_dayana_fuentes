@@ -33,36 +33,42 @@
             </ul>
         </nav>
     </header>
-    <section class="inicio_seul">
-        <h1>Seúl</h1>
-        <img rel="exterior" src="./assets_img/inicio_seul.jpg" alt="Seúl" type="image">
-    </section>
-    <section class="collage_grid">
-        <img src="./assets_img/palacio_gyeongbokgung.jpg" alt="Palacio Gyeongbokgung">
-        <img src="./assets_img/puerta_namdaemun_noche.jpg" alt="Puerta Namdaemun">
-        <img src="./assets_img/torres_noche.jpg" alt="Torres en Seúl">
-        <img src="./assets_img/lotte_world.jpg" alt="Lotte World">
-        <img src="./assets_img/seul-calle-neones.jpg" alt="Calles de Seúl">
-        <img src="./assets_img/cerezo_2.jpg" alt="Flores de Cerezo">
-        <img src="./assets_img/inicio_seul.jpg" alt="Noche lluviosa en Seúl">
-    </section>
-    <section class="formulario">
-        <form action="https://jsonplaceholder.typicode.com/users" name="complete-post" method="POST">
-            <fieldset id="datos_personales">
-                <legend>Datos personales</legend>
-                <label for="userName" class="formulario_label">Nombre del usuario</label>
-                <input type="text" name="userName" id="userName" required class="formulario_control" placeholder="Nombre y apellidos">
-                <label for="email" class="formulario_label">Correo</label>
-                <input type="email" name="email" id="email" required class="formulario_control" placeholder="Correo electrónico" value="@hotmail.com">
-                <label for="numero" class="formulario_label">Teléfono</label>
-                <input type="numero" name="numero" id="numero" required class="formulario_control" placeholder="Número telefónico">
-                <label for="info" class="formulario_label">Información</label>
-                <textarea name="info" id="info" rows="5" placeholder="Más información" class="formulario_control"></textarea>
-            </fieldset>
-            <button type="submit">Enviar<i class="fas fa-paper-plane"></i></button>
-            <button type="reset">Borrar<i class="fas fa-trash-alt"></i></button>
-        </form>
-    </section>
+    <main class="content_wrapper">
+        <section class="inicio_seul">
+            <h1>Seúl</h1>
+            <img rel="exterior" src="./assets_img/inicio_seul.jpg" alt="Seúl" type="image">
+        </section>
+        <section class="collage_grid">
+            <img src="./assets_img/palacio_gyeongbokgung.jpg" alt="Palacio Gyeongbokgung">
+            <img src="./assets_img/puerta_namdaemun_noche.jpg" alt="Puerta Namdaemun">
+            <img src="./assets_img/torres_noche.jpg" alt="Torres en Seúl">
+            <img src="./assets_img/lotte_world.jpg" alt="Lotte World">
+            <img src="./assets_img/seul-calle-neones.jpg" alt="Calles de Seúl">
+            <img src="./assets_img/cerezo_2.jpg" alt="Flores de Cerezo">
+            <img src="./assets_img/inicio_seul.jpg" alt="Noche lluviosa en Seúl">
+        </section>
+        <section class="formulario">
+            <form action="https://jsonplaceholder.typicode.com/users" name="complete-post" method="POST">
+                <fieldset id="datos_personales">
+                    <legend>Datos personales</legend>
+                    <label for="userName" class="formulario_label">Nombre del usuario</label>
+                    <input type="text" name="userName" id="userName" required class="formulario_control"
+                        placeholder="Nombre y apellidos">
+                    <label for="email" class="formulario_label">Correo</label>
+                    <input type="email" name="email" id="email" required class="formulario_control"
+                        placeholder="Correo electrónico" value="@hotmail.com">
+                    <label for="numero" class="formulario_label">Teléfono</label>
+                    <input type="numero" name="numero" id="numero" required class="formulario_control"
+                        placeholder="Número telefónico">
+                    <label for="info" class="formulario_label">Información</label>
+                    <textarea name="info" id="info" rows="5" placeholder="Más información"
+                        class="formulario_control"></textarea>
+                </fieldset>
+                <button type="submit">Enviar<i class="fas fa-paper-plane"></i></button>
+                <button type="reset">Borrar<i class="fas fa-trash-alt"></i></button>
+            </form>
+        </section>
+    </main>
     <footer class="main_footer">
         <address>Dayana Fuentes Palma</address>
         <p>© Tajamar</p>

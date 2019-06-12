@@ -4,7 +4,8 @@
   "description": "Curso Web Tajamar 2019",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/:css/ --watch --no-source-map"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,8 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "dialog-polyfill": "^0.5.0",
-    "normalize.css": "^8.0.1"
+    "jquery": "^3.4.1",
+    "normalize.css": "^8.0.1",
+    "popper.js": "^1.15.0"
   }
 }

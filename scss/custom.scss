@@ -1,6 +1,15 @@
 $theme-colors: (
-    "letra": #7cac71,
-    "fondo": #f1b17c
+  "letra": bisque,
+  "fondo": maroon
 );
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+$font-family-base: 'Lato', sans-serif;
+
+.header-font {
+  font-family: 'Baloo Bhai', cursive;;
+}
+.min-vh-10 {
+  min-height: 10vh;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";

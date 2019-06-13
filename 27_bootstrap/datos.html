@@ -32,16 +32,19 @@
                             <div class="form-group row">
                                 <label for="inputName" class="col-4 col-lg-2 col-form-label">Nombre</label>
                                 <div class="col-8 col-lg-4">
-                                    <input type="text" class="form-control" name="inputName" id="inputName" placeholder="">
+                                    <input type="text" class="form-control" name="inputName" id="inputName"
+                                        placeholder="">
                                 </div>
                                 <label for="inputApellido" class="col-4 col-lg-2 col-form-label">Apellido</label>
                                 <div class="col-8 col-lg-4">
-                                    <input type="text" class="form-control" name="inputApellido" id="inputApellido" placeholder="">
+                                    <input type="text" class="form-control" name="inputApellido" id="inputApellido"
+                                        placeholder="">
                                 </div>
                             </div>
                             <div class="form-group row">
-                              <label for="passw" class="col-4">Password</label>
-                              <input type="password" class=" col-8 form-control" name="passw" id="passw" placeholder="">
+                                <label for="passw" class="col-4">Password</label>
+                                <input type="password" class=" col-8 form-control" name="passw" id="passw"
+                                    placeholder="">
                             </div>
                         </fieldset>
                         <div class="form-group row">
@@ -55,11 +58,26 @@
         </main>
     </div>
     <footer class="min-vh-10 text-letra bg-fondo">
+        d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col-xs-12">
+                    <address class="mb-0"> Alejandro Cerezo</address>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="../node_modules/jquery/dist/jquery.js"></script>
-    <script src="../node_modules/holderjs/holder.js"></script>
     <script src="../node_modules/popper.js/dist/umd/popper.js"></script>
-    <script src=""></script>
+    <script src="../node_modules/holderjs/holder.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+        $('#navId a').on('click', function (e) {
+            e.preventDefault()
+            console.dir($(this))
+            $(this).tab('show')
+        })
+    </script>
 </body>
 
 </html>

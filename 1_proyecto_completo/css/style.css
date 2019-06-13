@@ -1,7 +1,10 @@
 /*************************** BODY *************************/
 body {
-    margin: 1rem;
     background-color: antiquewhite;
+}
+
+.content_wrapper {
+    margin: 1rem;
 }
 
 /*************************** HEADER *************************/

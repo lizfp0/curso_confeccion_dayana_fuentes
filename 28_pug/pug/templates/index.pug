@@ -1,16 +1,44 @@
+//Esto es un comentario
+        esto sigue siendo un comemtario
+
+//- esto no es un comentario de pug
+    más comentario
+
+-const page = 2
+-const titulo = 'Hola Pug'    
+-const charset = 'utf-8'
+-const empresa = 'Colegio <b>Tajamar</b>'
+-const aPaises = [{nombre: 'España', id: 'es', description: 'bla bla bla bla'}, {nombre: 'Francia', id: 'fr'}, {nombre: 'Italia', id: 'it'}]
+
+-let x = 5
+-x = x*x
+
 doctype
 html(lang=language) 
     head
         meta(charset='utf-8')
-        title Hola Pug 
+        title #{titulo}
+        link(rel="stylesheet", href="./css/style.css")
     body
-        header 
-            h1 Hola Pug 
-        section
-            p.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi alias possimus, temporibus laboriosam ullam, sapiente, excepturi ex corrupti cum voluptate soluta id repudiandae ducimus similique repellendus reiciendis qui quasi. Eligendi.
-                Placeat blanditiis assumenda totam sequi rerum facilis nulla.Neque voluptatibus esse ut non? Fugit, et. Distinctio molestiae saepe aut amet temporibus doloribus neque nam accusantium optio nostrum, voluptate sapiente expedita velit nisi corrupti veniam reprehenderit quisquam dignissimos animi.
-            p   Lorem ipsum sit amet consectetur adipisicing elit. Necessitatibus, temporibus ad! In eos architecto iusto cupiditate est officia pariatur, elit       voluptates dolor illum! Quis, eum odio? Deleniti error laborum 
-                b nisi.
-        footer
-            address #{author}
+        //comentario
+        header#main
+        main
+            section
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero neque, recusandae alias repellendus placeat sequi illum quos expedita natus ut 
+                consequuntur voluptates atque voluptatum, omnis id ex voluptatibus tempora qui.
+                div.info Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione repellendus sequi, laborum, odit doloribus ex debitis, assumenda nemo nisi           recusandae animi suscipit repellat cupiditate! Voluptatem quas necessitatibus amet exercitationem neque.
+                figure
+                    img(src="http://via.placeholder.com/500x350/" a)
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor temporibus voluptatum officiis doloribus praesentium consequuntur provident aut libero repellendus, sed deserunt cum eaque alias sit maiores illum dolores beatae incidunt.
+            section
+                form(action="")
+                    select(name="pais")   
+                    -for (i = 0; i < aPaises.lenght; i++) {
+                    -let item = aPaises[i]
+                    option(value=item.id title=item.description) #{item.nombre}   
+                    }
+
+        footer(class="main-footer")
+            address &copy; #{author}
+            div
+                small!= empresa

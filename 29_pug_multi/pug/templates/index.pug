@@ -1,0 +1,67 @@
+//Esto es un comentario
+        esto sigue siendo un comemtario
+
+//- esto no es un comentario de pug
+    más comentario
+
+-const page = 2
+-const titulo = 'Hola Pug'    
+-const charset = 'utf-8'
+-const empresa = 'Colegio <b>Tajamar</b>'
+-const aPaises = [{nombre: 'España', id: 'es', description: 'bla bla bla bla'}, {nombre: 'Francia', id: 'fr', description: 'bla bla bla bla'}, {nombre: 'Italia', id: 'it', description: 'bla bla bla bla'}]
+-const aMenu = [{nombre:'Inicio', id: 'inicio', description: 'bla bla bla bla'}, {nombre:'Clientes', id: 'clientes', description: 'bla bla bla bla'}, {nombre:'Portafolio', id: 'portafolio', description: 'bla bla bla bla'}, {nombre:'Nosotros', id:'nosotros', description: 'bla bla bla bla'}, {nombre:'Partner', id:'partner', description: 'bla bla bla bla'}, {nombre:'Acerca de', id:'acerca de', description: 'bla bla bla bla'}  ]
+-const aMenuP = [{nombre:'Páginas web', id: 'web', description: 'bla bla bla bla'}, {nombre: 'Mobile App', id: 'apps', description: 'bla bla bla bla'}, {nombre: 'UX / UI', id: 'ux', description: 'bla bla bla bla'}]
+
+-let x = 5
+-x = x*x
+
+
+//Mixin
+mixin itemMenu(item)
+    li
+        a(href="#"+item.toLowerCase() title=item.description) #{item.nombre}
+
+mixin inputGroup(inputName)
+    .form-group
+        label(for=inputName.toLowerCase()) ${inputName}:
+        block 
+
+doctype
+html(lang=language) 
+    head
+        meta(charset='utf-8')
+        title #{titulo}
+        link(rel="stylesheet", href="./css/style.css")
+    body
+        //comentario
+        include ../partials/header.pug
+        main
+            section
+                p. 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo excepturi, fugit a omnis et nostrum, porro magnam pariatur facere ea iste repellendus, voluptates doloremque obcaecati rerum sunt dignissimos aperiam possimus.
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero neque, recusandae alias repellendus placeat sequi illum quos expedita natus ut 
+                    consequuntur voluptates atque voluptatum, omnis id ex voluptatibus tempora qui.
+                div.info Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione repellendus sequi, laborum, odit doloribus ex debitis, assumenda nemo nisi           recusandae animi suscipit repellat cupiditate! Voluptatem quas necessitatibus amet exercitationem neque.
+                figure
+                    img(src="http://via.placeholder.com/500x350/" a)
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor temporibus voluptatum officiis doloribus praesentium consequuntur provident aut libero repellendus, sed deserunt cum eaque alias sit maiores illum dolores beatae incidunt.
+            section
+                form(action="")
+                    select(name="pais")   
+                    -for (i = 0; i < aPaises.lenght; i++) {
+                    -let item = aPaises[i]
+                    option(value=item.id title=item.description) #{item.nombre}   
+                    }
+            section(id= aMenu[4].id)
+                header
+                    h2= aMenu[4].nombre
+                    p= aMenu[4].description
+                h3 Formulario de contactos
+                    form(action="")
+                        +inputGroup('Nombre')
+                            input(type="text", name="nombre")
+
+        footer(class="main-footer")
+            address &copy; #{author}
+            div
+                small!= empresa

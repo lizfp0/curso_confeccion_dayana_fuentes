@@ -1,0 +1,20 @@
+.main-header,
+.main-footer
+{
+    background-color: bisque;
+    color: darkseagreen;
+}
+
+.main-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 1rem;
+}

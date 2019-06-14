@@ -9,9 +9,17 @@
 -const charset = 'utf-8'
 -const empresa = 'Colegio <b>Tajamar</b>'
 -const aPaises = [{nombre: 'España', id: 'es', description: 'bla bla bla bla'}, {nombre: 'Francia', id: 'fr'}, {nombre: 'Italia', id: 'it'}]
+-const aMenu = ['Inicio', 'Clientes', 'Portafolio' , 'Nosotros']
 
 -let x = 5
 -x = x*x
+
+
+//Mixin
+mixin itemMenu(item)
+    li
+        a(href="#"+item.toLowerClase()) #(item)
+
 
 doctype
 html(lang=language) 
@@ -21,11 +29,24 @@ html(lang=language)
         link(rel="stylesheet", href="./css/style.css")
     body
         //comentario
-        header#main
+        header#main-header.main-header
+            //- -if (page == 1)
+            //- -h1  = titulo
+
+            if (page == 1)
+                h1  = titulo
+            else 
+                h1 #{titulo} -Continuación 
+            nav#main-menu
+                ul
+                    each item in aMenu
+                        +itemMenu(item)
         main
             section
+                p. 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo excepturi, fugit a omnis et nostrum, porro magnam pariatur facere ea iste repellendus, voluptates doloremque obcaecati rerum sunt dignissimos aperiam possimus.
                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero neque, recusandae alias repellendus placeat sequi illum quos expedita natus ut 
-                consequuntur voluptates atque voluptatum, omnis id ex voluptatibus tempora qui.
+                    consequuntur voluptates atque voluptatum, omnis id ex voluptatibus tempora qui.
                 div.info Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione repellendus sequi, laborum, odit doloribus ex debitis, assumenda nemo nisi           recusandae animi suscipit repellat cupiditate! Voluptatem quas necessitatibus amet exercitationem neque.
                 figure
                     img(src="http://via.placeholder.com/500x350/" a)
@@ -37,7 +58,6 @@ html(lang=language)
                     -let item = aPaises[i]
                     option(value=item.id title=item.description) #{item.nombre}   
                     }
-
         footer(class="main-footer")
             address &copy; #{author}
             div

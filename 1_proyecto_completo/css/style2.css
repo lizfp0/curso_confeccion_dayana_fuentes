@@ -62,7 +62,23 @@
 /*************************** IMG - IFRAME *************************/
 
 img {
-    width: 40%;
+    width: 35%;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 30%;
+    height: 30%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /*************************** FOOTER *************************/

@@ -1,6 +1,6 @@
 /*************************** BODY *************************/
 body {
-    background-color: antiquewhite;
+    margin: 0;
 }
 
 .content_wrapper {
@@ -8,34 +8,57 @@ body {
 }
 
 /*************************** HEADER *************************/
-
-header.main_header_menu {
-    font-family: 'Heebo', sans-serif;
-    background-color: rgb(187, 219, 230);
-    color:darksalmon;
-    padding: 0.8rem 0rem 0.5rem 1rem;
-}
-
-header.main_header nav {
-    margin-left: -1rem;
-}
-
-header.main_header nav ul {
-    list-style-type: none;
-    margin: 0;
+/************************* menu ****************************/
+.menu ul {
+    display: flex;
     padding: 0;
+    margin: 0;
+    list-style: none;
 }
-
-header.main_header nav li {
-    display: inline-block;
-}
-
-header.main_header nav a {
-    color: inherit;
-    text-decoration: none;
+.menu a {
     display: block;
-    padding: 0.8rem;
+    padding: 2em;
+    background-color: rgb(187, 219, 230);
+    text-decoration: none;
+    color: #191C26;
 }
+.menu a:hover {
+    background-color: darksalmon;
+}
+.menu ul li ul {
+    display: none;
+}
+.menu ul li a:hover + ul, 
+.menu ul li ul:hover {
+    display: block;
+}
+
+/*************************** TABLAS *************************/
+
+.clima_table, 
+.demografia {
+    width: 100%;
+    text-align: center;
+}
+
+.clima_table, 
+.demografia>tbody>tr>th {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+ /*Filas pares*/
+.clima_table>tbody>tr:nth-of-type(even)>td, 
+.demografia>tbody>tr:nth-of-type(even)>td {
+    background-color: rgb(183, 240, 183);
+}
+
+/*Filas impares*/
+.clima_table>tbody>tr:nth-of-type(odd)>th, 
+.demografia>tbody>tr:nth-of-type(odd)>th {
+    background-color:rgb(195, 222, 231);
+}
+
 
 /*************************** FORMULARIO *************************/
 .placeholder {

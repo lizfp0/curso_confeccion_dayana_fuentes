@@ -9,6 +9,11 @@ body {
 
 /*************************** HEADER *************************/
 /************************* menu ****************************/
+
+header{
+    margin: 0;
+}
+
 .menu ul {
     display: flex;
     padding: 0;
@@ -27,6 +32,7 @@ body {
 }
 .menu ul li ul {
     display: none;
+    position: absolute;
 }
 .menu ul li a:hover + ul, 
 .menu ul li ul:hover {
@@ -109,4 +115,5 @@ footer.main_footer {
     padding: 0.8rem 0rem 0.5rem 1rem;
     text-align: center;
     align-items: center;
+    margin: 0;
 }

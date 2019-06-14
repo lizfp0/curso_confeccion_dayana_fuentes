@@ -24,6 +24,7 @@
 }
 .menu ul li ul {
     display: none;
+    position: absolute;
 }
 .menu ul li a:hover + ul, 
 .menu ul li ul:hover {

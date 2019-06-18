@@ -51,6 +51,10 @@ min-height: 4rem;
 
 /************************* BUTTON ****************************/
 
+
+
+
+
 /*************************** TABLAS *************************/
 
 .clima_table, 
@@ -118,9 +122,33 @@ section.formulario button {
     margin-bottom: 2rem;
 }
 
+/*************************** IFRAME *************************/
+
+.embed-container {
+    position: relative;
+    padding-bottom: 40.50%;
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+}
+
+
+
 /*************************** FOOTER *************************/
 
-footer.main_footer {
+footer.button {
+    text-align: right;
+    color: coral;
+    font-size: 1.1rem;
+}
+
+footer {
     font-family: 'Heebo', sans-serif;
     background-color: rgb(187, 219, 230);
     color:darksalmon;

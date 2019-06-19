@@ -23,61 +23,71 @@ header{
 .menu a {
     display: block;
     padding: 2em;
-    background-color: rgb(187, 219, 230);
+    background-color: rgb(198, 226, 235);
     text-decoration: none;
     color: #191C26;
 }
 .menu a:hover {
-    background-color: darksalmon;
+    background-color: rgb(245, 189, 170);
 }
-.menu ul li ul {
-    display: none;
-    position: absolute;
-}
-.menu ul li a:hover + ul, 
-.menu ul li ul:hover {
-    display: block;
-}
+/************************* IMG Y VIDEOS ****************************/
 
-/************************* IMG ****************************/
-
-.image_wrapper_right {
-width: 50%;
+img {
+width: 35%;
+height: 20rem;;
 float: right;
 padding-left: 4rem;
 padding-bottom: 0.8rem;
-min-height: 4rem;
+}
+
+img.collage_grid {
+    max-width: 50%;
+    min-width: 40%;
+    float: left;
+}
+
+video {
+    max-width: 38%;
 }
 
 /************************* BUTTON ****************************/
 
-
-
-
+.button {
+    text-align: right;
+    font-size: 1rem;
+    background-color: white;
+    width: 5%;
+    align-content: center;
+    align-items: center;
+}
 
 /*************************** TABLAS *************************/
 
 .clima_table, 
-.demografia {
+.demografia,
+.empresas {
     width: 100%;
     text-align: center;
 }
 
-.clima_table, 
-.demografia>tbody>tr>th {
+.clima_table>tbody>tr>th, 
+.demografia>tbody>tr>th,
+.empresas>tbody>tr>th {
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
 }
 
  /*Filas pares*/
 .clima_table>tbody>tr:nth-of-type(even)>td, 
-.demografia>tbody>tr:nth-of-type(even)>td {
+.demografia>tbody>tr:nth-of-type(even)>td
+.empresas>tbody>tr:nth-of-type(even)>td {
     background-color: rgb(183, 240, 183);
 }
 
 /*Filas impares*/
 .clima_table>tbody>tr:nth-of-type(odd)>th, 
-.demografia>tbody>tr:nth-of-type(odd)>th {
+.demografia>tbody>tr:nth-of-type(odd)>th,
+.empresas>tbody>tr:nth-of-type(odd)>th {
     background-color:rgb(195, 222, 231);
 }
 
@@ -141,12 +151,6 @@ section.formulario button {
 
 
 /*************************** FOOTER *************************/
-
-footer.button {
-    text-align: right;
-    color: coral;
-    font-size: 1.1rem;
-}
 
 footer {
     font-family: 'Heebo', sans-serif;

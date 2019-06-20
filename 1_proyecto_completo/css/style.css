@@ -10,6 +10,10 @@ body {
 /*************************** HEADER *************************/
 /************************* MENÚ ****************************/
 
+.color_header {
+    background-color: rgb(198, 226, 235); 
+}
+
 header{
     margin: 0;
 }
@@ -32,22 +36,30 @@ header{
 }
 /************************* IMG Y VIDEOS ****************************/
 
-img {
-width: 35%;
-height: 20rem;;
-float: right;
-padding-left: 4rem;
-padding-bottom: 0.8rem;
+.img_header,
+.kpop,
+.gastronomia,
+.demografia {
+    width: 35%;
+    height: 20rem;;
+    float: right;
+    padding-left: 4rem;
+    padding-bottom: 0.8rem;
 }
 
-img.collage_grid {
-    max-width: 50%;
-    min-width: 40%;
-    float: left;
+.center {
+    width: 50%;
 }
 
 video {
     max-width: 38%;
+    float: right;
+}
+
+/************************* IMG GRID ****************************/
+
+.grid {
+    display: grid;
 }
 
 /************************* BUTTON ****************************/
@@ -64,33 +76,43 @@ video {
 /*************************** TABLAS *************************/
 
 .clima_table, 
-.demografia,
-.empresas {
+.demografia {
     width: 100%;
     text-align: center;
+    align-content: center;
+    align-items: center;
+}
+.empresas {
+    width: 70%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
 }
 
 .clima_table>tbody>tr>th, 
 .demografia>tbody>tr>th,
 .empresas>tbody>tr>th {
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
- /*Filas pares*/
-.clima_table>tbody>tr:nth-of-type(even)>td, 
-.demografia>tbody>tr:nth-of-type(even)>td
-.empresas>tbody>tr:nth-of-type(even)>td {
+.clima_table>tbody>tr:nth-of-type(1)>td, 
+.demografia>tbody>tr:nth-of-type(1)>td
+.empresas>tbody>tr:nth-of-type(1)>td {
     background-color: rgb(183, 240, 183);
 }
 
-/*Filas impares*/
-.clima_table>tbody>tr:nth-of-type(odd)>th, 
-.demografia>tbody>tr:nth-of-type(odd)>th,
-.empresas>tbody>tr:nth-of-type(odd)>th {
+.clima_table>tbody>td:nth-of-type(2)>th, 
+.demografia>tbody>td:nth-of-type(2)>th,
+.empresas>tbody>td:nth-of-type(2)>th {
     background-color:rgb(195, 222, 231);
 }
 
+.clima_table>tbody>th:nth-of-type(3)>th, 
+.demografia>tbody>th:nth-of-type(3)>th,
+.empresas>tbody>th:nth-of-type(3)>th {
+    background-color:lightpink;
+}
 
 /*************************** FORMULARIO *************************/
 .placeholder {
@@ -100,16 +122,16 @@ video {
 }
 
 .formulario_control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-     color:  rgb(15, 15, 24);
-     opacity: 1; /* Firefox*/
+    color:  rgb(15, 15, 24);
+    opacity: 1; /* Firefox*/
 } 
   
 .formulario_control:-ms-input-placeholder { /* Internet Explorer 10-11 */
-     color: rgb(15, 15, 24); 
+    color: rgb(15, 15, 24); 
 }
     
 .formulario_control::-ms-input-placeholder { /* Microsoft Edge  */
-     color: rgb(15, 15, 24);
+    color: rgb(15, 15, 24);
 }  
 
 .formulario_label {
@@ -121,7 +143,7 @@ fieldset {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border-color: rgb(245, 212, 153);
-    width: 50%;
+    width: 40%;
 }
 
 fieldset input, textarea {
@@ -147,8 +169,6 @@ section.formulario button {
     width: 50%;
     height: 50%;
 }
-
-
 
 /*************************** FOOTER *************************/
 

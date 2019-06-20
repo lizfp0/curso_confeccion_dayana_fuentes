@@ -1,13 +1,40 @@
 /*************************** BODY *************************/
 body {
     margin: 0;
+    background-color: whitesmoke;
 }
 
 .content_wrapper {
     margin: 1rem;
 }
 
-/*************************** HEADER *************************/
+p {
+    font-size: 1.1rem; 
+}
+
+/*************************** H *************************/
+
+h1.centrar {
+    color: cadetblue;
+    text-align: center;
+    font-size: 4rem;
+}
+
+h1 {
+    color: darkcyan;
+    font-size: 3rem;
+}
+
+h2 {
+    color: darkolivegreen;
+    font-size: 2rem;
+}
+
+h3 {
+    color: goldenrod;
+    font-size: 1.5rem;
+}
+
 /************************* MENÚ ****************************/
 
 .color_header {
@@ -36,15 +63,28 @@ header{
 }
 /************************* IMG Y VIDEOS ****************************/
 
-.img_header,
-.kpop,
-.gastronomia,
-.demografia {
-    width: 35%;
-    height: 20rem;;
+.image_wrapper_right {
+    width: 50%;
     float: right;
-    padding-left: 4rem;
-    padding-bottom: 0.8rem;
+    display: inline;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.image_wrapper_right_comida {
+    width: 40%;
+    float: right;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+img {
+    max-width: 100%;
 }
 
 .center {
@@ -52,8 +92,12 @@ header{
 }
 
 video {
-    max-width: 38%;
+    width: 40%;
     float: right;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 /************************* IMG GRID ****************************/
@@ -62,15 +106,20 @@ video {
     display: grid;
 }
 
+/************************* UL ****************************/
+
+ul {
+    list-style: inside square;
+}
+
 /************************* BUTTON ****************************/
 
 .button {
     text-align: right;
     font-size: 1rem;
-    background-color: white;
-    width: 5%;
-    align-content: center;
-    align-items: center;
+    background-color: whitesmoke;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 /*************************** TABLAS *************************/
@@ -100,18 +149,6 @@ video {
 .demografia>tbody>tr:nth-of-type(1)>td
 .empresas>tbody>tr:nth-of-type(1)>td {
     background-color: rgb(183, 240, 183);
-}
-
-.clima_table>tbody>td:nth-of-type(2)>th, 
-.demografia>tbody>td:nth-of-type(2)>th,
-.empresas>tbody>td:nth-of-type(2)>th {
-    background-color:rgb(195, 222, 231);
-}
-
-.clima_table>tbody>th:nth-of-type(3)>th, 
-.demografia>tbody>th:nth-of-type(3)>th,
-.empresas>tbody>th:nth-of-type(3)>th {
-    background-color:lightpink;
 }
 
 /*************************** FORMULARIO *************************/
@@ -180,4 +217,25 @@ footer {
     text-align: center;
     align-items: center;
     margin: 0;
+}
+
+footer p {
+    margin-bottom: 0;
+} 
+
+footer aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+    
+footer aside li {
+    display: inline-block;
+}
+    
+footer aside a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 0.8rem 0.2rem;
 }

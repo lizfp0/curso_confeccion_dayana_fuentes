@@ -129,7 +129,7 @@ ul {
 
 .clima_table, 
 .demografia {
-    width: 88%;
+    width: 80%;
     text-align: center;
     align-content: center;
     align-items: center;
@@ -170,7 +170,7 @@ ul {
 }
 /*************************** FORMULARIO *************************/
 .placeholder {
-    color: rgb(172, 69, 69); 
+    color: black; 
     background-color:antiquewhite;
     font-family: 'Courier New', Courier, monospace;  
 }
@@ -255,4 +255,267 @@ footer aside a {
     text-decoration: none;
     display: block;
     padding: 0.8rem 0.2rem;
+}
+
+/*************************** MediaQ *************************/
+@media screen and (max-width: 800px) {
+
+    /*************************** BODY *************************/
+    body {
+        margin: 0;
+        background-color:lightblue;
+    }
+
+    .content_wrapper {
+        margin: 2rem;
+    }
+
+    p {
+        font-size: 1rem; 
+    }
+
+    /*************************** H *************************/
+
+    h1.centrar {
+        color: lightsalmon;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    h1 {
+        color: rgb(57, 189, 189);
+        font-size: 2rem;
+    }
+
+    h2 {
+        color: rgb(121, 144, 79);
+        font-size: 2rem;
+    }
+
+    h3 {
+        color: rgb(240, 198, 94);
+        font-size: 1rem;
+    }
+
+    /************************* MENÚ ****************************/
+
+    .color_header {
+        background-color:burlywood; 
+    }
+
+    header{
+        margin: 0;
+    }
+
+    .menu ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .menu a {
+        display: block;
+        padding: 2em;
+        background-color: darkseagreen;
+        text-decoration: none;
+        color: #191C26;
+    }
+    .menu a:hover {
+        background-color: rgb(198, 245, 198);
+    }
+    /************************* IMG Y VIDEOS ****************************/
+
+    .image_wrapper_right {
+        width: 50%;
+        float: right;
+        padding-right: 2rem;
+        padding-bottom: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .image_wrapper_kpop {
+        width: 20%;
+        height: 10rem;;
+        float: right;
+        padding-right: 2rem;
+        padding-bottom: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .image_wrapper_right_comida {
+        width: 40%;
+        float: right;
+        padding-right: 2rem;
+        padding-bottom: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .center {
+        width: 50%;
+    }
+
+    video {
+        width: 20%;
+        float: right;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        display: flex;
+    }
+
+    /************************* UL ****************************/
+
+    ul {
+        list-style: inside square;
+    }
+
+    /************************* BUTTON ****************************/
+
+    .button {
+        text-align: right;
+        font-size: 1rem;
+        background-color: lightblue;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /*************************** TABLAS *************************/
+
+    .clima_table, 
+    .demografia {
+        width: 80%;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+    }
+    .table_empresas {
+        width: 70%;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .clima_table, 
+    .demografia,
+    .table_empresas {
+        width: 100%;
+        text-align: center;
+    }
+
+    .clima_table>tbody>tr>th, 
+    .demografia>tbody>tr>th,
+    .table_empresas>tbody>tr>th {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    /* even u odd */ /*Filas pares*/
+    .clima_table>tbody>tr:nth-of-type(even)>td, 
+    .demografia>tbody>tr:nth-of-type(even)>td,
+    .table_empresas>tbody>tr:nth-of-type(even)>td {
+        background-color: lightseagreen;
+    }
+
+    /*Filas impares*/
+    .clima_table>tbody>tr:nth-of-type(odd)>th, 
+    .demografia>tbody>tr:nth-of-type(odd)>th,
+    .table_empresas>tbody>tr:nth-of-type(odd)>th {
+        background-color: lightsalmon;
+    }
+    /*************************** FORMULARIO *************************/
+    .placeholder {
+        color: black; 
+        background-color:antiquewhite;
+        font-family: 'Courier New', Courier, monospace;  
+    }
+
+    .formulario_control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color:  rgb(15, 15, 24);
+        opacity: 1; /* Firefox*/
+    } 
+    
+    .formulario_control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: rgb(15, 15, 24); 
+    }
+        
+    .formulario_control::-ms-input-placeholder { /* Microsoft Edge  */
+        color: rgb(15, 15, 24);
+    }  
+
+    .formulario_label {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    fieldset {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-color: rgb(246, 222, 181);
+        width: 50%;
+    }
+
+    fieldset input, textarea {
+        width: 70%;
+    }
+
+    section.formulario button {
+        margin-bottom: 2rem;
+    }
+
+    /*************************** IFRAME *************************/
+
+    .embed-container {
+        position: relative;
+        padding-bottom: 40.50%;
+        height: 0;
+        overflow: hidden;
+    }
+    .embed-container iframe {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 50%;
+        height: 50%;
+    }
+
+    /*************************** FOOTER *************************/
+
+    footer {
+        font-family: 'Heebo', sans-serif;
+        background-color: darkolivegreen;
+        color:darksalmon;
+        padding: 0.8rem 0rem 0.5rem 1rem;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    footer p {
+        margin-bottom: 0;
+    } 
+
+    footer aside ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+        
+    footer aside li {
+        display: inline-block;
+    }
+        
+    footer aside a {
+        color: inherit;
+        text-decoration: none;
+        display: block;
+        padding: 0.8rem 0.2rem;
+    }
 }

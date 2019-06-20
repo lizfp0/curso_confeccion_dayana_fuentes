@@ -72,6 +72,16 @@ header{
     margin-right: 1rem;
 }
 
+.image_wrapper_kpop {
+    width: 20%;
+    height: 10rem;;
+    float: right;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 .image_wrapper_right_comida {
     width: 40%;
     float: right;
@@ -90,18 +100,13 @@ img {
 }
 
 video {
-    width: 40%;
+    width: 20%;
     float: right;
     padding-right: 2rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
-}
-
-/************************* IMG GRID ****************************/
-
-.grid {
-    display: grid;
+    display: flex;
 }
 
 /************************* UL ****************************/

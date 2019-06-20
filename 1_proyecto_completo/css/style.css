@@ -66,7 +66,6 @@ header{
 .image_wrapper_right {
     width: 50%;
     float: right;
-    display: inline;
     padding-right: 2rem;
     padding-bottom: 1rem;
     margin-left: 1rem;
@@ -81,7 +80,6 @@ header{
     margin-left: 1rem;
     margin-right: 1rem;
 }
-
 
 img {
     max-width: 100%;
@@ -126,31 +124,45 @@ ul {
 
 .clima_table, 
 .demografia {
-    width: 100%;
+    width: 88%;
     text-align: center;
     align-content: center;
     align-items: center;
 }
-.empresas {
+.table_empresas {
     width: 70%;
     text-align: center;
     align-content: center;
     align-items: center;
 }
 
+.clima_table, 
+.demografia,
+.table_empresas {
+    width: 100%;
+    text-align: center;
+}
+
 .clima_table>tbody>tr>th, 
 .demografia>tbody>tr>th,
-.empresas>tbody>tr>th {
+.table_empresas>tbody>tr>th {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-.clima_table>tbody>tr:nth-of-type(1)>td, 
-.demografia>tbody>tr:nth-of-type(1)>td
-.empresas>tbody>tr:nth-of-type(1)>td {
-    background-color: rgb(183, 240, 183);
+/* even u odd */ /*Filas pares*/
+.clima_table>tbody>tr:nth-of-type(even)>td, 
+.demografia>tbody>tr:nth-of-type(even)>td,
+.table_empresas>tbody>tr:nth-of-type(even)>td {
+    background-color: beige;
 }
 
+/*Filas impares*/
+.clima_table>tbody>tr:nth-of-type(odd)>th, 
+.demografia>tbody>tr:nth-of-type(odd)>th,
+.table_empresas>tbody>tr:nth-of-type(odd)>th {
+    background-color:darkseagreen;
+}
 /*************************** FORMULARIO *************************/
 .placeholder {
     color: rgb(172, 69, 69); 

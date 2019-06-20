@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Seúl · Contacto</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="menu">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./seul.html">Seúl</a></li>
+                <li><a href="./seul.html">Demografía</a></li>
+                <li><a href="./seul.html">Hanbok</a></li>
+                <li><a href="./gastronomia.html">Gastronomía</a></li>
+                <li><a href="./kpop.html">K-pop</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content_wrapper">
+        <section class="formulario">
+            <form action="https://jsonplaceholder.typicode.com/users" name="complete-post" method="POST">
+                <fieldset id="datos_personales">
+                    <legend>Datos personales</legend>
+                    <label for="userName" class="formulario_label">Nombre del usuario</label>
+                    <input type="text" name="userName" id="userName" required class="formulario_control"
+                        placeholder="Nombre y apellidos">
+                    <label for="email" class="formulario_label">Correo</label>
+                    <input type="email" name="email" id="email" required class="formulario_control"
+                        placeholder="Correo electrónico" value="@hotmail.com">
+                    <label for="numero" class="formulario_label">Teléfono</label>
+                    <input type="numero" name="numero" id="numero" required class="formulario_control"
+                        placeholder="Número telefónico">
+                    <label for="info" class="formulario_label">Información</label>
+                    <textarea name="info" id="info" rows="5" placeholder="Más información"
+                        class="formulario_control"></textarea>
+                </fieldset>
+                <button type="submit">Enviar<i class="fas fa-paper-plane"></i></button>
+                <button type="reset">Borrar<i class="fas fa-trash-alt"></i></button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

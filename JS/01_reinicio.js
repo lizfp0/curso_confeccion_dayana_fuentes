@@ -152,6 +152,7 @@ if (w) {}
 
 parseInt(7/3) //2 (me devuelve la parte entera del resultado)
 7%3 // 1  //saca el resto que sería 1
+9%3 // 0
 
 //Operadores de asignación
 
@@ -173,6 +174,8 @@ x = 86
 //NEGACIÓN  !
 
 x = 86
+
+
 //NO IGUALDAD
 (x != '86') //FALSE
 

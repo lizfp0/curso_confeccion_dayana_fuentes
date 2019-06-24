@@ -1,23 +1,15 @@
-/* BUCLE FOR
-let limite = 10  //El limite
-for (
-    let i = 0;  //Contador de la primera vuelta  //Siempre su primer numero será 0
-    i < limite;
-    i++) // i = i + 1 (es lo mismo, pero no se usa)
-    {
-    console.log(i) 
-*/
+'use strict'
 
-//EJEMPLO DE ITERACIÓN(repetición) Y CONDICIÓN
+// Ejemplo de iteración y condición
 
 let limite = 10
 let acumulador = 0
 let maximo = 100
-let contador = 0 
+let contador = 0
 for (let i = 0; i < limite; i++) {
     contador = i
     console.log(i)
-    if( acumulador + (i*i) > maximo) {
+    if ( acumulador + (i*i) > maximo) {
         break
     }
     acumulador += (i*i)
@@ -25,82 +17,68 @@ for (let i = 0; i < limite; i++) {
 console.log(acumulador, contador)
 
 {
-/**  JSDoc
+/** JSDoc
  * Saber si un numero es múltiplo de tres,
- *  Seleccionar en un array los que lo sean, guardándolos en otro array y
+ * seleccionar en un array los que lo sean, guardandolos en otro array y
  * mostrarlo por pantalla
- * 
-*/   
+ *  
+ */    
 }
 
-/** function isMultiplo      
+/** function isMultiplo 
  * @description devuelve true si un numero m es múltiplo de n
- * @param {number}: m
- * @param {number}: n
- * @return {boolean}
-    */    
-
-    //implementar es escribir el código
-
-
- function isMultiplo(m = 0, n = 0) {  //Esto es una función pura
+ * @param {number} m
+ * @param {number} n
+ * @returns {boolean} 
+ */
+function isMultiplo(m = 0, n = 0) {
+    if(isNaN(m) || isNaN(n)) {
+        throw new Error('Parametros no numericos')
+    }
     let r = true
-    if(n%m) {  //es lo mismo que  (n%m != 0)
+    if(m%n) { //  m%n != 0)
         r = false
     }
     return r
-}
-
-// Espectativas
-console.log('isMultiplo(2, 20) debe dar true')
-// Prueba
-console.log(isMultiplo(2, 20))
-// Espectativas
-console.log('isMultiplo(2, 21) debe dar false')
-// Prueba
-console.log(isMultiplo(2, 21))
-// Espectativas
-console.log('isMultiplo(2, -20) debe dar true')
-// Prueba
-console.log(isMultiplo(2, -20))
-// Espectativas
-console.log('isMultiplo(2, -21) debe dar false')
-// Prueba
-console.log(isMultiplo(2, -21))
-// Espectativas
-console.log('isMultiplo(3, 20) debe dar false')
-// Prueba
-console.log(isMultiplo(3, 20))
-// Espectativas
-console.log('isMultiplo(3, 21) debe dar true')
-// Prueba
-console.log(isMultiplo(3, 21))
-
-
+ }
 
 /** function extraerMultiplos
  * @description extraer de un array los multiplos de n
- * @params {number}: n
- * @params {array}: aDatos
+ * @param {number} n
+ * @param {array} aDatos 
  * @returns {array}
  */
-
-function extraerMultiplos(n, aDatos) {
+function extraerMultiplos(n = 0, aDatos = []) {
     let r = []
+    for (let i = 0; i < aDatos.length; i++) {
+        const item = aDatos[i];
+        if (isMultiplo(item, n)) {
+            // r[r.length] = item
+            r.push(item)
+        }
+    }    
     return r
 }
 
+/** funcion mostrarMultiplos
+ * @description Muestra un array con los multiplos de n
+ * @param {number} n 
+ * @param {Array} aDatos 
+ * @returns {void}
+ */
+function mostrarMultiplos(n, aDatos) {
+    console.clear()
+    console.log(`Los multiplos de ${n}`)
+    console.log(`en el array ${aDatos} son:`)
+    console.log(extraerMultiplos(n, aDatos))
+}
 
+
+module.exports = {};
+module.exports.isMultiplo = isMultiplo
+module.exports.extraerMultiplos = extraerMultiplos
 
 {
-/*
-    let aDatos = [1,2,3,4,5,6,7,8,9]
-
-    for (let i = 0; i < array.length; i++) {
-        const element = array[i];
-        
-    }
-
-    n%3 == 0 
-*/    
+    let misDatos = [1,2,3,4,5,6,7,8,9]
+    mostrarMultiplos(2, misDatos)
 }

@@ -7,9 +7,10 @@
  * 
  */
 function sumar (a = 0, b = 0) {
-    if (typeof
-        )
-
+    /* let c = a + b 
+    return c */
+    return a + b
+}
 
 /** Función restar
 * @description recibe dos parámetros y devuelve la restar de ambos
@@ -37,6 +38,16 @@ function multiplicar (a = 0, b = 1)  {
 */
 function dividir (a = 0, b = 1)  {
     return a / b
+}
+
+/** Función Mostrar
+ * @description Recibe un texto y lo saca por pantalla
+ * @param {string}
+ * @returns {void}
+ * 
+ */
+function mostrar(cadena = '') {
+    console.log(cadena)
 }
 
 module.exports = {}

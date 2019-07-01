@@ -25,6 +25,7 @@ for (let i = 0; i < cadena.length; i++) {
 let x = cadena.split(' ').join('').toUpperCase()
 console.log(x)
 
+/*
 cadena.slice(inicio, final)
 cadena.substring(inicio, final)
 cadena.substr(inicio, desplazamiento)
@@ -40,3 +41,17 @@ cadena.charAt(posicion)  //cadena[position]
 cadena.charCodeAt(posicion) 
 
 String.fromCharCode(num)
+*/
+
+let numero = 23.7865432
+console.log(numero)
+console.log(numero.toString())
+console.log(numero.toFixed(2))
+console.log(numero.toPrecision(4))
+console.log(numero.toExponential())
+console.log(numero.toLocaleString())
+
+
+numero = 0.00000000000000237865432
+console.log(numero.toExponential())
+console.log(numero)

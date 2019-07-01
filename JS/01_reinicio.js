@@ -1,48 +1,42 @@
 'use strict'
 
-/* DATOS
-
-- Indefinidos:
-    - undefined
+/* Datos 
+- Indefinidos: 
+    - undefine
 - Primitivos
     - number
     - string
     - boolean
-- Referenciados
-    -Objects
-        - Array
-        - Date
-        - Error
-        - RegExp
-        - Math
-        - JSON
-        - Function
+- Referenciados: 
+    - objects
+            - Array
+            - Date
+            - Error
+            - RegExp
+            - Math
+            - JSON
+            - Function
 */
 
-/* VARIABLES
-
-    - Tipo: débiles (implícito al valor) y dinámicos
+/* Variables
+    - Tipo: débiles (implícitos al valor) y dinámicos
     - Ciclo de vida
-        - declaración : inicialización(es un tipo de asignación) : asignación
-*/ 
+        - declaración : inicialización : asignación
+*/
 
-let x = 34 // declaración(let) + inicialización (asignación de variable)(x = 34)
-// let y (declaración, y es undefined) let y o let y = undefined (es lo mismo)
-// let y = suma 
+let x = 34 // declaración + inicialización
 
-// suma(3,4)
-// y(2,5)
-// ......
-// ......
-x = 45 // asignación de un nuevo dato
-x = x * 2 //asignación por expresión
+//....
+//....
+x = 45 // asignación
+x = x * 2 // asignación por expresiones
 
 /* Ámbito
-    - Global 
-    - Local
+    - global
+    - local 
         - al bloque => let / const
-        - a la función => var 
-*/ 
+        - a la función => var
+ */
 
 let a = 31 // global
 console.log('Variable global', a)
@@ -106,14 +100,14 @@ function izar() {
 
 // Casting a string
 let n = 23
-let msg = 'Juan tiene ' + n  + ' años' // Juan tiene 23 años
+let msg = 'Juan tiene ' + n  + ' años'// 'Juan tiene 23 años'
 console.log(typeof n)
 
 // Casting a number
 let indice = '34'
 let incremento = indice * 0.10
 
-//EN JS TODOS LOS DATOS HACEN CASTING A NUMBER -> NaM
+// EN JS TODOS LOS DATAS HACEN CASTING A NUMBER -> NaN
 
 let tipo = 'indefinido'
 let sueldo = 23 * tipo
@@ -122,8 +116,9 @@ let datoRaro = -23 / 0
 console.log('sueldo: ', sueldo)
 console.log('datoRaro: ', datoRaro)
 
+
 // Casting a boolean
-//EN JS TODOS LOS DATOS HACEN CASTING A BOOLEAN
+// EN JS TODOS LOS DATAS HACEN CASTING A BOOLEAN
 
 let w
 
@@ -148,38 +143,37 @@ if (w) {}
 
 
 // Operadores
-// Aritméticos: + - * / %(calcula el modulo)
+// Aritméticos: + - * / %
 
-parseInt(7/3) //2 (me devuelve la parte entera del resultado)
-7%3 // 1  //saca el resto que sería 1
-9%3 // 0
+parseInt(7/3) // 2
+7%3 // 1
+9%3 //0
 
-//Operadores de asignación
+// Operadores de asignación
 
 let x = 45
 x = 86
 
-//Operadores de comparación
+// Operadores de comparación
 
-//IGUALDAD
-(x == 67)  //comparación que sea igual a .... (FALSE)
-(x == 86)  // (TRUE)
-(x == '86') // (TRUE)
+// Igualdad
+(x == 67) // false
+(x == 86) // true
+(x == '86') // true
 
-//IDENTIDAD
-(x === '86')  //(FALSE)  //comparación de tipos
+// Identidad
+(x === '86') // false
 
-//OTROS COMPARADORES >  <  >=  <=
+// Otros > < >= <=
 
-//NEGACIÓN  !
+// Negación !
 
 x = 86
 
+// No igualdad
+(x != '86') // false
 
-//NO IGUALDAD
-(x != '86') //FALSE
-
-// NO IDENTIDAD
-(x !== '86') //TRUE     
+// No identidad
+(x !== '86') // true
 
 

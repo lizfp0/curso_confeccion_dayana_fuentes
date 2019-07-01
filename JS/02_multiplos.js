@@ -13,9 +13,9 @@ for (let i = 0; i < limite; i++) {
         break
     }
     acumulador += (i*i)
+    // acumulador = acumulador + (i*i)
 }
 console.log(acumulador, contador)
-
 {
 /** JSDoc
  * Saber si un numero es múltiplo de tres,

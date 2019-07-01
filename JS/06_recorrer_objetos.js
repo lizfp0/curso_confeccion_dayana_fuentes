@@ -1,3 +1,4 @@
+
 /**
  * @description recoore un objeto a tantos niveles como contenga
  *               y crea un string con la información
@@ -52,3 +53,4 @@ let p1 = {
 
 cadena = objectToString(p1)
 console.log(cadena)
+

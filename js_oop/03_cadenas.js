@@ -25,4 +25,18 @@ for (let i = 0; i < cadena.length; i++) {
 let x = cadena.split(' ').join('').toUpperCase()
 console.log(x)
 
+cadena.slice(inicio, final)
+cadena.substring(inicio, final)
+cadena.substr(inicio, desplazamiento)
 
+cadena.match()
+cadena.search()
+cadena.replace()
+
+cadena.indexOf(clave)
+cadena.lastIndexOf(clave)
+
+cadena.charAt(posicion)  //cadena[position]
+cadena.charCodeAt(posicion) 
+
+String.fromCharCode(num)

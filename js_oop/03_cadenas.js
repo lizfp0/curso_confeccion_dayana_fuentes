@@ -25,7 +25,9 @@ for (let i = 0; i < cadena.length; i++) {
 let x = cadena.split(' ').join('').toUpperCase()
 console.log(x)
 
-/*
+/* 
+****METODOS DE MANIPULACION DE STRING****
+
 cadena.slice(inicio, final)
 cadena.substring(inicio, final)
 cadena.substr(inicio, desplazamiento)
@@ -48,10 +50,10 @@ console.log(numero)
 console.log(numero.toString())
 console.log(numero.toFixed(2))
 console.log(numero.toPrecision(4))
-console.log(numero.toExponential())
-console.log(numero.toLocaleString())
-
-
 numero = 0.00000000000000237865432
 console.log(numero.toExponential())
 console.log(numero)
+numero = 23.7864
+console.log(numero.toLocaleString('lang', {style: 'currency', currency: 'KRW'}))
+
+

@@ -20,18 +20,39 @@
     console.log(aNumerosOriginal)
 
 
-    let nombres = ['ana', 'carlos', 'vanye', 'javi', 'liz']
+    let nombres = ['ana', 'carlos', 'vanye', 'javi', 'liz', 'roberto', 'dayana']
 
     // Fraccionar array : inmutable
     let seleccion = nombres.slice(1, 3)
     console.log(seleccion)
     console.log(nombres)
 
+    //Clonar
+    let clon = nombres.slice()
+
     //Fraccionar array : mutable
-    seleccion = nombres.splice(1, 3)
-    console.log(seleccion)
+    let eliminados = nombres.splice(1, 3, 'pedro', 'ernesto')
+    console.log(eliminados)
     console.log(nombres)
 
+    // splice para añadir
+    let paises = ['corea del sur', 'japon', 'china', 'tailandia']
+    paises.splice(2, 0, 'España')
+    console.log(paises)
 
+    //Pilas y colas
 
+    //PILA -> stack FiLO
+
+    console.log(paises.push(['portugal', 'alemania']))
+    paises.pop()
+    console.log(paises)
+    
+    // COLAS -> heap FIFO
+
+    paises.unshift('croacia')
+    console.log(paises)
+    paises.
+    console.log()
+    
     

@@ -1,26 +1,39 @@
 'use strict'
 
-function frasePalindromo(cadena = '') {
-    let msg = 1
-    if (cadena == cadena.toUpperCase()) {
-        msg = 1
-    } else if (cadena == cadena.toLowerCase()) {
-        msg = 2
+/** funcion frasePalindromo
+ * @description: comprobar si un string (cadena) es palindromo
+ * @param {string} cadena
+ * @returns {boolean}
+ */
+
+ const frasePalindromo = (cadena = '') => {
+    let r = false
+    cadenaSinEspacios = cadena.split(' ').join('').toLowerCase()
+    console.log(cadenaSinEspacios)
+    cadenaInversa = cadenaSinEspacios.split('').reverse().join('')
+    console.log(cadenaInversa)
+    if (cadenaSinEspacios === cadenaInversa) {
+        r = true
     }
-    return msg
+    return r
 }
 
-
-function comprobarFrasePalindromo(cadena = '') {
-    const msg = [
-        'Yo soy(0)', 
-        'Yo no hago yoga hoy(1)',
-        'Sometamos o matemos(2)', 
-    ]
-    console.log(msg(frasePalindromo(cadena)))
+ const comprobarFrasePalindromo = (cadena = '') => {
+    sinEspacios = cadena.split(' ').join('').toLowerCase()
+    return sinEspacios === sinEspacios.split('').reverse().join('') ? true : false 
 }
+
 
 module.exports = {};
 module.exports.frasePalindromo = frasePalindromo
 module.exports.comprobarFrasePalindromo = comprobarFrasePalindromo
+
+
+
+
+
+
+
+
+
 

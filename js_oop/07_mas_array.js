@@ -18,3 +18,20 @@
     console.log(aNumbers)
     console.log(aNumerosOriginal.reverse())
     console.log(aNumerosOriginal)
+
+
+    let nombres = ['ana', 'carlos', 'vanye', 'javi', 'liz']
+
+    // Fraccionar array : inmutable
+    let seleccion = nombres.slice(1, 3)
+    console.log(seleccion)
+    console.log(nombres)
+
+    //Fraccionar array : mutable
+    seleccion = nombres.splice(1, 3)
+    console.log(seleccion)
+    console.log(nombres)
+
+
+
+    

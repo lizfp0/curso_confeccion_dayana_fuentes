@@ -6,15 +6,6 @@ aDatos[aDatos.length] = 56
 aDatos[100] = 9
 //console.log(aDatos[78])
 
-for (let i = 0; i < aDatos.length; i++) {
-    const items = aDatos[i]
-    if(!items) {
-        aDatos[i] = parseInt(Math.random() * 100)
-    }
-}
-
-//console.log(String(aDatos))
-
 // **************************************************************************
 
 /** funcion randomArray
@@ -66,11 +57,6 @@ console.log(String(randomArray(40)))
 
  function letraDNI(dni) {
      const aLetras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T']; 
-     /*
-     let r = ''
-     r = aLetras[dni%23]
-     return r
-     */
      return aLetras[formatoDNI(dni)%23]
  }
 

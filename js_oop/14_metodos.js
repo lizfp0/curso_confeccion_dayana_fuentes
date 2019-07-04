@@ -7,13 +7,13 @@ const o = {
         console.log(this.id)          //this es yo, no es necesario poner otro nombre o el o
     },
     saludar: function (otro = 'amigo') {
-        if (this.comprobarSiSonConocidos(otro)) {
+        if (this._comprobarSiSonConocidos(otro)) {
             console.log(`Hola ${otro}, ¿cómo estás?`)
         } else {
             console.log(`Hola ${otro}, soy ${this.nombre}`)
         }
     },
-    comprobarSiSonConocidos: function (otro) {
+    _comprobarSiSonConocidos: function (otro) {  //es una funcion privada, solo se usa dentro del objeto
         return this.conocidos.some(
             item => item.toLowerCase() === otro.toLowerCase() )
     }
@@ -23,4 +23,5 @@ o.mostrarID()
 o.saludar('Juan')
 o.saludar()
 o.saludar('Pablo')
+console.log(o._comprobarSiSonConocidos('Julio'))
 

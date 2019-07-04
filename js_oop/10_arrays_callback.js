@@ -1,4 +1,3 @@
-
 const aDatos = [2, 3, 7, 4, 9, 5]
 
 /*
@@ -12,7 +11,6 @@ aDatos.reduceRight( (item, i, array) => {})
 */
 
 //Recorrido o procesado del array
-
 aDatos.forEach (
     item => { console.log(` - ${item}`)}
 )
@@ -25,7 +23,6 @@ aDatos.forEach (
 */
 
 //Proyectar o mapear un array
-
  function cuadrados(aDatos = []) {
     return aDatos.map( item => item * item)
  }
@@ -39,7 +36,6 @@ let usuarios = ['Armando', 'Carlos', 'Alba', 'Maria', 'Alejandro', 'Ari']
 console.log(usuarios.map( item => String(item).toUpperCase()))
 
 //Filtros de Array
-
 function pares(aDatos = []) {
    return aDatos.filter( item => !(item%2))
 }
@@ -54,7 +50,6 @@ console.log(pares(aDatos))
 console.log(impares(aDatos))
 
 //Reducciones
-
 function sumaTotal(aDatos = []) {
     return aDatos.reduce( (acumulado, item) => {return acumulado + item} ) 
 } 
@@ -77,8 +72,6 @@ function media(aDatos = []) {
 console.log('SumaTotal: ', sumaTotal(aDatos))
 console.log('Media: ', media(aDatos))
 
-
-//
 
 const aReyes = [
     'Fernando', 'Isabel', 'Juana', 'Carlos', 'Felipe', 'Luis',

@@ -11,6 +11,8 @@ aDatos.reduce( (item, i, array) => {})
 aDatos.reduceRight( (item, i, array) => {})
 */
 
+//Recorrido o procesado del array
+
 aDatos.forEach (
     item => { console.log(` - ${item}`)}
 )
@@ -28,7 +30,7 @@ aDatos.forEach (
     return aDatos.map( item => item * item)
  }
 
-/* ES LO MISMO QUE EL DE ARRIBA
+/* ES LO MISMO QUE EL DE ARRIBA (VERSION CORTA)
 const cuadrados = aDatos => aDatos.map( item => item * item)*/
 
 console.log(cuadrados(aDatos))
@@ -59,33 +61,43 @@ function sumaTotal(aDatos = []) {
 
 function media(aDatos = []) {
     let i = 0
-    let sumaTotal = aDatos.reduce( (acumulado, item, index) => {
+   /*  let sumaTotal = aDatos.reduce( (acumulado, item, index) => {
         i = index
         return acumulado + item
-    })
-    return  sumaTotal / ++i // ++ incrementa el i // un ejemplo de inmutable
-} 
+    }) 
+    // i = i + 1
+    return  sumaTotal / ++i */
 
-console.log('SumaTotal', sumaTotal(aDatos))
-console.log('Media', media(aDatos))
+    return aDatos.reduce( (acumulado, item, index) => {
+        i = index
+        return acumulado + item
+    })  / ++i
+ }
+
+console.log('SumaTotal: ', sumaTotal(aDatos))
+console.log('Media: ', media(aDatos))
+
 
 //
 
-{
-    const aReyes = [
-            'Fernando', 'Isabel', 'Juana', 'Carlos', 'Felipe', 'Luis',
-            'Jose', "Amadeo", 'Alfonso', 'Juan Carlos' ]
-    }
-/*
-    function isNombreRey(nombre) {
-        for (let i = 0; i < aReyes.length; i++) {
-            const item = aReyes[i];
-            if ( nombre.toUpperCase() == item.toUpperCase()) {
-                return [true, i]
-            }
-        } 
-        return [false]
-    }}
-*/
+const aReyes = [
+    'Fernando', 'Isabel', 'Juana', 'Carlos', 'Felipe', 'Luis',
+    'Jose', "Amadeo", 'Alfonso', 'Juan Carlos' ]
 
+/* function isNombreRey(nombre) {
+for (let i = 0; i < aReyes.length; i++) {
+    const item = aReyes[i];
+    if ( nombre.toUpperCase() == item.toUpperCase()) {
+        return [true, i]
+    }
+} 
+return [false]
+} */
+
+function isNombreRey(nombre) {
+    return aReyes.some( item => nombre.toUpperCase() === item.toUpperCase())
+}
+ 
+console.log(isNombreRey('fernando'))
+console.log(isNombreRey('Federico'))
  

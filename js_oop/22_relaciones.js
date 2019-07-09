@@ -26,16 +26,36 @@ function Mascota(nombre, especie) {
     this.especie = especie
 }
 
-const p1 = new Persona(
-    'Pepe',
-     34,
-     new Direccion('c/ Pez', 7, 'Cadiz', 'España'));
+function Alumno(nombre, edad, direccion, curso) {
+    this.curso = curso
+    Persona.prototype.constructor.call(this, nombre, edad, direccion)
+}
+
+Alumno.prototype = new Persona()
+Alumno.prototype.constructor = Alumno 
+
+Alumno.prototype.inscribirse = function (curso) {
+    this.cursos.push(curso)
+}
+
+          // .constructor =>guarda el valor de la funcion constructora que se ha creado
+
+// ---------------------------------------------------------------------------------------------------------------------------
+
+const a1 = new Alumno('Pepe', 34,
+        new Direccion('c/ Pez', 7, 'Cadiz', 'España'),
+        'Páginas Web')
+console.log(a1)               
+
+console.log(a1 instanceof Alumno)
+console.log(a1 instanceof Persona)
+console.log(a1 instanceof Object)
 
 const m1 = new Mascota('Amedio', 'mono')
 const m2 = new Mascota('Perrie', 'ornitorrinco')
 
-p1.adoptarMascota(m2) //Inyección de dependencia
-console.log(p1)
+a1.adoptarMascota(m2) //Inyección de dependencia
+console.log(a1)
 
 console.log(m2.nombre)  //independencia (la mascota)
-console.log(p1.mascota[0].nombre)  //dependencia (mi mascota)
+console.log(a1.mascota[0].nombre)  //dependencia (mi mascota)

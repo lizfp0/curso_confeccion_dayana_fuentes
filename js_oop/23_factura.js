@@ -1,3 +1,6 @@
+const {fechaEsp, fijarLongitudCadena} = require('./15_helpers.js')
+
+
 /** funcion Factura
  * @description modificar una factura hecha para crear una funcion constructora correspondiente y que permita crear objetos de ese tipo
  * @property utilizar la propiedad prototype
@@ -10,72 +13,44 @@
 
 // ---------------------- modelo de factura ---------------------------
 
-const generarFactura = {
-    empresa: {
-        nombre: '',
-        direccion: '',
-        telefono: '',
-        nif: '',
-    },
-    cliente: {
-        nombre: '',
-        direccion: '',
-        telefono: '',
-        nif: '',
-    },
-    items : [
-        {descripcion: '', precioUnidad: 0, cantidad: 0} 
-    ],
-    numFactura: '',
-    tipoIVA: '',
-    formaPago: '',
-    fecha: new Date()
-    }
+function Factura(
+    empresa = {},
+    cliente = {},
+    items  = [{}],
+    numFactura = '',
+    tipoIVA = '',
+    formaPago = '',
+    fecha = new Date()) { 
+    this.empresa = empresa
+    this.cliente = cliente
+    this.items = items
+    this.numFactura = numFactura
+    this.tipoIVA = tipoIVA
+    this.formaPago = formaPago
+    this.fecha = fecha
+}    
 
-generarFactura.calcularImporte = function() {}
-generarFactura.mostrarImporte = function() {}
-
-// ---------------------------- Fecha ----------------------------------
-
-const capitalize = (cadena = '') => 
-        cadena[0].toUpperCase() + cadena.slice(1)
-
-const fechaEsp = (fecha = new Date() ) => {
-    if (typeof fecha === 'string') {
-        fecha = new Date(fecha)
-    }
-    const nombreDia = capitalize(aDias[fecha.getDay()])
-    const dia = fecha.getDate()
-    const mes = capitalize(aMeses[fecha.getMonth()])
-    const año = fecha.getFullYear()
-    return `${nombreDia}, ${dia} de ${mes} del ${año}`
+function Empresa (nombre, direccion, telefono, nif) {
+    this.nombre = nombre
+    this.direccion = direccion
+    this.telefono = telefono
+    this.nif = nif
 }
 
-function fijarLongitudCadena (cadena = '', lon = 0) {
-    if (cadena.length < lon) {
-        const espacios = lon - cadena.length
-        for (let i = 0; i < espacios; i++) {
-            cadena += ' ';
-        }
-    } else if (cadena.length > lon) {
-        cadena = cadena.slice(0, lon-3) + '...'
-    }
-    return cadena
+function Item (descripcion = '', precioU = 0, cantidad = 0) {
+    this.descripcion = descripcion
+    this.precioU = precioU
+    this.cantidad = cantidad
+}
+
+function Direccion (calle, num, poblacion, pais) {
+    this.calle = calle
+    this.num = num
+    this.poblacion = poblacion
+    this.pais = pais
 }
 
 // ------------------------ Factura cliente------------------------------
-
-function Viaje(destino, transporte, coste) {
-    this.destino = destino
-    this.transporte = transporte
-    this.coste = coste
-    this.paises = []
-}
-
-Viaje.prototype.paisDeDestino = function(paises) {
-    this.paises.push(paises)
-    // Dependencia (metodo)
-}
 
 function Paises(nombre, capital) {
     this.nombre = nombre
@@ -117,7 +92,7 @@ const factura = {
     fecha: new Date()
     }
 
-factura.calcularImporte = function() {
+Factura.prototype.calcularImporte = function() {
     const importe = {} 
     importe.base = 
         this.items
@@ -128,7 +103,7 @@ factura.calcularImporte = function() {
     return importe
 }
 
-factura.listarItems = function() {
+Factura.prototype.listarItems = function() {
     let items = ``
     this.items.forEach(
         item => {
@@ -144,7 +119,7 @@ factura.listarItems = function() {
     return items
 }
 
-factura.prepararFactura = function() {
+Factura.prototype.prepararFactura = function() {
     const importe = this.calcularImporte()
     const factura =
 `
@@ -174,8 +149,8 @@ factura.prepararFactura = function() {
     return factura
 }
 
-factura.render = function () {
+Factura.prototype.render = function () {
     console.log(this.prepararFactura())
 }
 
-factura.render()
+Factura.render()
